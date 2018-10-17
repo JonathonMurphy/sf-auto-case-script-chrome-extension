@@ -1,0 +1,1264 @@
+<html class="ext-strict gr__amplify_my_salesforce_com  ext-strict x-viewport" style="" id="ext-gen159">
+   <head>
+      <script src="/static/111213/js/perf/stub.js"></script>
+      <title>Case Edit: New Case - Console</title>
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/zen-componentsCompatible.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/elements.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/common.css" rel="stylesheet" type="text/css">
+      <link href="/EXT/ext-3.3.3/resources/css/ext-all-notheme.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/ExtCSS-SFDC.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/ServiceDesk.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/InteractionLog.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/ConsoleSfx.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/LiveAgentConsole.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/knowledgeOneSidebar.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/CTI.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1536960320000/Theme3/gc/dStandard.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1536960320000/Theme3/00D300000000VGm/0053400000Bdr7f/gc/dCustom0.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1536960320000/Theme3/00D300000000VGm/0053400000Bdr7f/gc/dCustom1.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1536960320000/Theme3/00D300000000VGm/0053400000Bdr7f/gc/dCustom2.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/extended.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1536960320000/Theme3/gc/allCustom.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/SDWidget.css" rel="stylesheet" type="text/css">
+      <link href="/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/CTIWidget.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript">
+         //<![CDATA[
+         try{(function(){var w=self,l,p,o;if(w&&top){for(;w!==top&&(p=w.parent)&&p!==w&&(o=p.location)&&o.protocol===(l=w.location).protocol&&(o.host===l.host||(p.document&&p.document.domain===w.document.domain));w=p);if(w!==top)throw "";}({f:function(){document.documentElement?document.documentElement.style.display="":(!this.a&&(this.a=10),this.a<1E5&&(window.sfdcRetryShowWindow=this)&&setTimeout("sfdcRetryShowWindow.f()",this.a),this.a*=2)}}.f())})();}catch(e){if(top!==self)top.location=location;else throw e;}//]]>
+      </script><script type="text/javascript">
+         window.sfdcExternalNavigationWithWarning = function(url) {
+             var target = '/servlet/servlet.ExternalRedirect?url=' + encodeURIComponent(url);
+             blankshield.open(target);
+         };
+      </script>
+      <script src="https://c.la4-c2-was.salesforceliveagent.com/content/g/js/44.0/scrt.min.js"></script>
+      <script src="https://c.la4-c2-was.salesforceliveagent.com/content/g/js/44.0/agent.js"></script>
+      <script src="/EXT/ext-3.3.3/ext.js"></script><script src="/jslibrary/1539646802000/sfdc/main.js"></script><script src="/jslibrary/jslabels/1539713630000/en_US.js"></script><script src="/ckeditor/ckeditor-4.x/rel/ckeditor.js?t=4.5.7.16"></script>
+      <style>.cke{visibility:hidden;}</style>
+      <script src="/jslibrary/1539646802000/sfdc/AccessibleDialog.js"></script><script src="/jslibrary/1520639630000/canvas/CanvasRendering.js"></script><script src="/jslibrary/1539646802000/sfdc/ConsoleMasterWindow.js"></script><script src="/jslibrary/1539646802000/sfdc/EntityFeedCore.js"></script><script src="/jslibrary/1539646802000/sfdc/InteractionFramework.js"></script><script src="/jslibrary/1539646802000/sfdc/Knowledge2ServerSideComponent.js"></script><script src="/jslibrary/1539646802000/sfdc/Opportunity.js"></script><script src="/jslibrary/1539646802000/sfdc/SearchClickTracking.js"></script><script src="/jslibrary/1539646802000/sfdc/ServiceDesk.js"></script><script src="/jslibrary/1515605724000/ui-sfdc-javascript-impl/SfdcExtended.js"></script><script src="/jslibrary/1539646802000/sfdc/UnifiedSearchLogging.js"></script><script src="/jslibrary/1539646802000/sfdc/sfcti.js"></script><script src="/jslibrary/1527790282000/liveagent/LiveAgentConsole.js"></script><script src="/jslibrary/1539646802000/sfdc/Widgets.js"></script><script>window.sfdcPage = new ConsoleSfdcPage();
+         UserContext.initialize({"ampm":["AM","PM"],"isAccessibleMode":false,"salesforceURL":"https://amplify.my.salesforce.com","dateFormat":"M/d/yyyy","language":"en_US","locale":"en_US","dateTimeFormat":"M/d/yyyy h:mm a","labelLastModified":"1539713630000","today":"10/17/2018 11:42 AM","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":true},{"index":215,"name":"HideOtherInfluenceGetStarted","value":true},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":true},{"index":226,"name":"ShowDevContextMenu","value":true},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":true},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":true},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":301,"name":"HideManyWhoGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false},{"index":302,"name":"HideManyWhoInlineEditTip","value":false},{"index":303,"name":"HideSetupV2WelcomeMessage","value":false},{"index":312,"name":"ForecastingShowQuantity","value":false},{"index":313,"name":"HideDataImporterIntroMsg","value":false},{"index":314,"name":"HideEnvironmentHubLightbox","value":false},{"index":316,"name":"HideSetupV2GuidedTour","value":false},{"index":317,"name":"HideFileSyncMobileDownloadDialog","value":false},{"index":322,"name":"HideEnhancedProfileHelpBubble","value":true},{"index":328,"name":"ForecastingHideZeroRows","value":false},{"index":330,"name":"HideEmbeddedComponentsFeatureCallout","value":false},{"index":341,"name":"HideDedupeMatchResultCallout","value":false},{"index":340,"name":"HideS1BrowserUI","value":false},{"index":346,"name":"HideS1Banner","value":false},{"index":358,"name":"HideEmailVerificationAlert","value":false},{"index":354,"name":"HideLearningPathModal","value":false},{"index":359,"name":"HideAtMentionsHelpBubble","value":false},{"index":368,"name":"LightningExperiencePreferred","value":true},{"index":373,"name":"PreviewLightning","value":false}],"networkId":"","uiTheme":"Theme3","uiSkin":"Theme3","userName":"jmurphy@amplify.com","userId":"0053400000Bdr7f","isCurrentlySysAdminSU":false,"renderMode":"RETRO","startOfWeek":"1","vfDomainPattern":"amplify--(?:[^.]+).na29.visual.force.com","auraDomain":"amplify.lightning.force.com","orgPreferences":[{"index":257,"name":"TabOrganizer","value":true},{"index":113,"name":"GroupTasks","value":true}],"siteUrlPrefix":"","isDefaultNetwork":true,"timeFormat":"h:mm a"});
+      </script><script>try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/zen-componentsCompatible.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/elements.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/common.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/EXT/ext-3.3.3/resources/css/ext-all-notheme.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/ExtCSS-SFDC.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/ServiceDesk.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/InteractionLog.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/ConsoleSfx.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/LiveAgentConsole.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/knowledgeOneSidebar.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/CTI.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1536960320000/Theme3/gc/dStandard.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1536960320000/Theme3/00D300000000VGm/0053400000Bdr7f/gc/dCustom0.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1536960320000/Theme3/00D300000000VGm/0053400000Bdr7f/gc/dCustom1.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1536960320000/Theme3/00D300000000VGm/0053400000Bdr7f/gc/dCustom2.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/extended.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1536960320000/Theme3/gc/allCustom.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/SDWidget.css")}catch(e){}
+         try{DynamicCss.addCssUrl("/sCSS/44.0/sprites/1539460054000/Theme3/default/gc/CTIWidget.css")}catch(e){}
+         try{DynamicCss.doneLoading()}catch(e){}
+      </script><script src="/support/console/xdomain/30.0/xdomain.js"></script>
+      <link rel="shortcut icon" href="https://amplify.my.salesforce.com/favicon.ico">
+      <script src="/jslibrary/1539646802000/sfdc/Security.js"></script><script>ClientHash.prototype.needsClientHash('sid_Client','400000Bdr7f00000000VGm','70.151.98.131','/servlet/servlet.ClientHashValidator?ResponseRequestedURL=%2Fui%2Fsupport%2Fservicedesk%2FServiceDeskPage%3Ftsid%3D02u80000000bwCf');</script><script type="text/javascript" src="https://amplify.my.salesforce.com/lightning/lightning.out.delegate.js?v=vcyT9iZ1mU1gwOHbxxPsSg"></script><script type="text/javascript" data-src="/jslibrary/1539713630000/ui-analytics-reporting/EclairNG.js"></script><script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22console%3AintegrationAppConsolePage%22%2C%22fwuid%22%3A%22vcyT9iZ1mU1gwOHbxxPsSg%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fconsole%3AintegrationAppConsolePage%22%3A%22fmD7zFs40D3slTQ0AsexvQ%22%7D%2C%22pathPrefix%22%3A%22%22%2C%22ls%22%3A1%7D/resources.js?version=1536882060000"></script><script type="text/javascript" src="/auraFW/javascript/vcyT9iZ1mU1gwOHbxxPsSg/aura_prod.js"></script><script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22console%3AintegrationAppConsolePage%22%2C%22fwuid%22%3A%22vcyT9iZ1mU1gwOHbxxPsSg%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fconsole%3AintegrationAppConsolePage%22%3A%22fmD7zFs40D3slTQ0AsexvQ%22%7D%2C%22pathPrefix%22%3A%22%22%2C%22ls%22%3A1%7D/inline.js?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..h8AXtWHCDG7Gg7BinueESBVWqIpWznzHjlQwSY_XClk&amp;ltngOut=true"></script><script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22console%3AintegrationAppConsolePage%22%2C%22serializationVersion%22%3A%221-0.24.31%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fconsole%3AintegrationAppConsolePage%22%3A%22fmD7zFs40D3slTQ0AsexvQ%22%7D%2C%22ls%22%3A1%7D/appcore.js?ltngOut=true"></script><script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22console%3AintegrationAppConsolePage%22%2C%22serializationVersion%22%3A%221-0.24.31%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fconsole%3AintegrationAppConsolePage%22%3A%22fmD7zFs40D3slTQ0AsexvQ%22%7D%2C%22ls%22%3A1%7D/app.js?ltngOut=true"></script><script type="text/javascript" src="/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22console%3AintegrationAppConsolePage%22%2C%22fwuid%22%3A%22vcyT9iZ1mU1gwOHbxxPsSg%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fconsole%3AintegrationAppConsolePage%22%3A%22fmD7zFs40D3slTQ0AsexvQ%22%7D%2C%22pathPrefix%22%3A%22%22%2C%22ls%22%3A1%7D/bootstrap.js?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..h8AXtWHCDG7Gg7BinueESBVWqIpWznzHjlQwSY_XClk&amp;ltngOut=true"></script>
+      <link href="/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22console%3AintegrationAppConsolePage%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fconsole%3AintegrationAppConsolePage%22%3A%22fmD7zFs40D3slTQ0AsexvQ%22%7D%2C%22styleContext%22%3A%7B%22c%22%3A%22webkit%22%2C%22x%22%3A%5B%22isDesktop%22%5D%2C%22tokens%22%3A%5B%22markup%3A%2F%2Fforce%3AiconPaths%22%5D%2C%22tuid%22%3A%22RYdQTx-UOksY3aL0dQF14A%22%2C%22cuid%22%3A501794237%7D%2C%22pathPrefix%22%3A%22%22%7D/app.css" type="text/css" rel="stylesheet">
+      <style type="text/css">.uiPanelManager2{display:flex;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;-moz-box-orient:horizontal;-moz-box-pack:center;-moz-box-align:center;-ms-flex-align:center;-ms-flex-direction:row;box-orient:horizontal;box-pack:center;box-align:center;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none}.uiPanelManager2 *{pointer-events:auto}</style>
+   </head>
+   <body onunload="if(this.bodyOnUnload)bodyOnUnload();" onbeforeunload="if(this.bodyOnBeforeUnload){var s=bodyOnBeforeUnload();if(s)return s;}" onload="if(this.bodyOnLoad)bodyOnLoad();" class="ServiceDeskPage sfxConsole ext-webkit ext-chrome ext-mac net-withGlobalHeader sfdcBody brandQuaternaryBgr x-border-layout-ct" onfocus="if(this.bodyOnFocus)bodyOnFocus();" data-gr-c-s-loaded="true" id="ext-gen3" data-uidsfdc="16">
+      <div id="ServiceDeskHeader" class=" x-panel sd_header x-border-panel x-panel-noborder" style="left: 0px; top: 0px; width: 1560px;">
+         <div class="x-panel-bwrap" id="ext-gen18">
+            <div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen19" style="height: auto; width: 1560px;">
+               <div id="sdHeaderContent" class="sd_header_standard phHeader sfx darkBackground" style="height: 67px;">
+                  <div class="sd_custom_logo" style="top: 20px;"><img src="https://amplify--c.na29.content.force.com/servlet/servlet.ImageServer?id=0158000000151Li&amp;oid=00D300000000VGm&amp;lastMod=1399991752000" alt="" onload="javascript:scaleImage(this, 35,275);this.scaled=true;" title="" width="137" height="35"></div>
+                  <div class="unifiedSearchBox" style="top: 18px;">
+                     <form accept-charset="UTF-8" action="/_ui/search/ui/UnifiedSearchResults" enctype="application/x-www-form-urlencoded" id="phSearchForm" method="GET" name="sbsearch" onsubmit="if (window.ffInAlert) { return false; }; var inputEl = getElementByIdCS('phSearchInput'); inputEl.blur();handleUnifiedSearch('/_ui/search/ui/UnifiedSearchResults?' + parent.Ext.urlEncode(new parent.Ext.form.BasicForm(this).getValues()));return false;" class=" x-form">
+                        <input type="hidden" name="searchType" id="searchType" value="2"><input type="hidden" name="sen" id="sen0" value="00Q"><input type="hidden" name="sen" id="sen1" value="001"><input type="hidden" name="sen" id="sen2" value="02s"><input type="hidden" name="sen" id="sen3" value="003"><input type="hidden" name="sen" id="sen4" value="00T"><input type="hidden" name="sen" id="sen5" value="500"><input type="hidden" name="sen" id="sen6" value="005"><input type="hidden" name="sen" id="sen7" value="00U"><input type="hidden" name="sen" id="sen8" value="006"><input type="hidden" name="sen" id="sen9" value="ka"><input type="hidden" name="sen" id="sen10" value="570">
+                        <div class="headerSearchContainer" id="phSearchContainer" style="background: rgba(255, 255, 255, 0.2); border: 1px solid transparent;">
+                           <div class="headerSearchLeftRoundedCorner">
+                              <div class="searchBoxClearContainer" style="color: rgb(255, 255, 255);"><input autocomplete="off" id="phSearchInput" maxlength="100" name="str" placeholder="Search Salesforce" size="20" title="Search Salesforce" type="text" value="" data-uidsfdc="6" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><a class="headerSearchClearButton" href="javascript: void(0);" id="phSearchClearButton" name="phSearchClearButton" style="visibility: visible;" title="Clear search terms"></a></div>
+                              <div class="headerSearchRightRoundedCorner" id="searchButtonContainer"><input value="Search" id="phSearchButton" type="button"></div>
+                           </div>
+                           <div id="phSearchInput_autoCompleteBoxId" class="autoCompleteBoxScrolling" role="listbox" style="width: 532px; height: auto; display: none;">
+                              <div onmouseover="AutoCompleteInputElement.mouseOver('phSearchInput', 0)" onmouseout="AutoCompleteInputElement.mouseOut('phSearchInput', 0)" onclick="UnifiedSearchAutoCompleteElement.performWildcardedSearch('phSearchInput');" class="autoCompleteRow" id="phSearchInput_autoCompleteRowId_0"><span class="footerRow">Search for&nbsp;<span class="queryText">apacheco27*</span><span class="greyedText">&nbsp;(starts with)</span></span></div>
+                              <div class="usid-roundedCornerDropdown usid-brDropdown" id="usid-brDropdown"></div>
+                              <div class="usid-bottomSpacer" id="usid-spacerDropdown"></div>
+                              <div class="usid-roundedCornerDropdown usid-blDropdown" id="usid-blDropdown"></div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="multiforce">
+                     <div class="messages" style="border: 0px;"></div>
+                     <div id="eptStamp"></div>
+                     <div class="navLinks" style="top: 6px;">
+                        <div class="linkElements">
+                           <div id="toolbar">
+                              <!-- TabSet drop down -->
+                              <div class="menuButton menuButtonRounded appSwitcher" id="tsid" title="Service Cloud">
+                                 <div class="menuButtonButton" id="tsidButton">
+                                    <span class="menuButtonLabel" id="tsidLabel" tabindex="0"></span>
+                                    <div class="tsid-buttonArrow mbrButtonArrow" id="tsid-arrow"></div>
+                                    <div class="tsidButton-btm mbrButton-btm mbrButton-rc"></div>
+                                 </div>
+                                 <div class="menuButtonMenu" id="tsidMenu">
+                                    <div class="tsidMenu-tr mbrMenu-tr mbrMenu-rc"></div>
+                                    <div class="tsidMenu-tl mbrMenu-tl mbrMenu-rc"></div>
+                                    <div class="mbrMenuItems" id="tsid-menuItems">
+                                       <a href="/home/home.jsp?tsid=02u80000000vgvU" class="menuButtonMenuLink firstMenuItem">Salesforce Chatter</a><a href="/servlet/servlet.Integration?lid=01r34000000DG61&amp;ic=1&amp;linkToken=VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNaTQ1TlRkYSxRcUl4ODNLQ191QkxiVG5DSk8tRHhpLFlXWmtNR0po&amp;tsid=02u34000000jpg3" class="menuButtonMenuLink">Rollup Helper</a><a href="/home/home.jsp?tsid=02u34000000vuXE" class="menuButtonMenuLink">Pardot</a><a href="/home/home.jsp?tsid=02u34000000vuXF" class="menuButtonMenuLink">Salesforce Engage</a><a href="/home/home.jsp?tsid=02u34000000gNLG" class="menuButtonMenuLink">Survey Force</a><a href="/home/home.jsp?tsid=02u34000000gNLQ" class="menuButtonMenuLink">HubSpot</a><a href="/home/home.jsp?tsid=02u34000000gNd5" class="menuButtonMenuLink">Talkdesk</a><a href="/home/home.jsp?tsid=02u34000000c59k" class="menuButtonMenuLink">All Tabs</a><a href="/home/home.jsp?tsid=02u34000000vw07" class="menuButtonMenuLink">Lightning Adoption Tracker</a>
+                                       <hr class="menuSeparator">
+                                       <a href="https://appexchange.salesforce.com" class="menuButtonMenuLink" target="_blank">AppExchange</a><a href="http://developer.force.com" class="menuButtonMenuLink" target="_blank">Developer Community</a><a href="https://success.salesforce.com" class="menuButtonMenuLink" target="_blank">Trailblazer Community</a>
+                                    </div>
+                                    <div class="tsidMenu-br mbrMenu-br mbrMenu-rc"></div>
+                                    <div class="tsidMenu-bc mbrMenu-bc"></div>
+                                    <div class="tsidMenu-bl mbrMenu-bl mbrMenu-rc"></div>
+                                 </div>
+                              </div>
+                              <script>new MenuButtonRounded('tsid', false,16);</script>
+                           </div>
+                           <a href="javascript:openPopupFocusEscapePounds(%27https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Flanguage%253Den_US%2526release%253D216.8.9%2526instance%253DNA29&amp;site=https%3A%2F%2Fhelp.salesforce.com%27, %27Help%27, 1024, 768, %27width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no%27, false, false);" class="brandZeronaryFgr" title="Help &amp; Training (New Window)"></a>
+                           <div class="menuButton menuButtonRounded" id="userNav" title="User menu for Jonathon Murphy">
+                              <div class="menuButtonButton" id="userNavButton">
+                                 <span class="menuButtonLabel" id="userNavLabel" tabindex="0" style="background-image: url(&quot;https://amplify--c.na29.content.force.com/profilephoto/729340000001L80/T&quot;);"></span>
+                                 <div class="userNav-buttonArrow mbrButtonArrow" id="userNav-arrow"></div>
+                                 <div class="userNavButton-btm mbrButton-btm mbrButton-rc"></div>
+                              </div>
+                              <div class="menuButtonMenu" id="userNavMenu">
+                                 <div class="userNavMenu-tr mbrMenu-tr mbrMenu-rc"></div>
+                                 <div class="userNavMenu-tl mbrMenu-tl mbrMenu-rc"></div>
+                                 <div class="mbrMenuItems" id="userNav-menuItems"><a href="/_ui/core/userprofile/UserProfilePage" class="menuButtonMenuLink firstMenuItem" title="My Profile">My Profile</a><a href="/ui/setup/Setup" class="menuButtonMenuLink" title="Setup">Setup</a><a href="/secur/logout.jsp" class="menuButtonMenuLink" id="app_logout" onclick="try { Sfdc.support.servicedesk.logout(event);} catch (e) {return true;}" title="Logout">Logout</a></div>
+                                 <div class="userNavMenu-br mbrMenu-br mbrMenu-rc"></div>
+                                 <div class="userNavMenu-bc mbrMenu-bc"></div>
+                                 <div class="userNavMenu-bl mbrMenu-bl mbrMenu-rc"></div>
+                              </div>
+                           </div>
+                           <script>new MenuButtonRounded('userNav', false,16);</script>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="serviceDeskFooter" class="sd_footer widget_right_aligned x-border-panel x-box-layout-ct" style="height: 35px; left: 0px; top: 597px; width: 1560px;">
+         <div class="x-box-inner" id="ext-gen58" style="height: 35px; width: 1560px;">
+            <table id="scc_widget_mostRecentlyUsed_button" cellspacing="0" class="x-btn sd_widget_button x-btn-noicon x-box-item" style="width: auto; left: 1245px; top: 0.5px;">
+               <tbody class="x-btn-large x-btn-icon-large-left">
+                  <tr>
+                     <td class="x-btn-tl"><i>&nbsp;</i></td>
+                     <td class="x-btn-tc"></td>
+                     <td class="x-btn-tr"><i>&nbsp;</i></td>
+                  </tr>
+                  <tr>
+                     <td class="x-btn-ml"><i>&nbsp;</i></td>
+                     <td class="x-btn-mc">
+                        <em class="" unselectable="on">
+                           <button type="button" id="ext-gen106" class=" x-btn-text">
+                              <div class="sd_widget_btn_text"><span class="mostRecentlyUsedIcon footerComponentIcon"></span><span class="sd_widget_btn_text_positioner">History</span></div>
+                           </button>
+                        </em>
+                     </td>
+                     <td class="x-btn-mr"><i>&nbsp;</i></td>
+                  </tr>
+                  <tr>
+                     <td class="x-btn-bl"><i>&nbsp;</i></td>
+                     <td class="x-btn-bc"></td>
+                     <td class="x-btn-br"><i>&nbsp;</i></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table id="ext-comp-1016" cellspacing="0" class="x-btn sd_widget_button x-btn-text-icon x-box-item" style="width: auto; left: 1336px; top: 0.5px;">
+               <tbody class="x-btn-large x-btn-icon-large-left">
+                  <tr>
+                     <td class="x-btn-tl"><i>&nbsp;</i></td>
+                     <td class="x-btn-tc"></td>
+                     <td class="x-btn-tr"><i>&nbsp;</i></td>
+                  </tr>
+                  <tr>
+                     <td class="x-btn-ml"><i>&nbsp;</i></td>
+                     <td class="x-btn-mc"><em class="" unselectable="on"><button type="button" id="ext-gen137" class=" x-btn-text liveAgentOffline">Live Agent (0)‎</button></em></td>
+                     <td class="x-btn-mr"><i>&nbsp;</i></td>
+                  </tr>
+                  <tr>
+                     <td class="x-btn-bl"><i>&nbsp;</i></td>
+                     <td class="x-btn-bc"></td>
+                     <td class="x-btn-br"><i>&nbsp;</i></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table id="ext-comp-1020" cellspacing="0" class="x-btn sd_widget_button x-btn-noicon x-box-item" style="width: auto; left: 1472px; top: 0.5px;">
+               <tbody class="x-btn-large x-btn-icon-large-left">
+                  <tr>
+                     <td class="x-btn-tl"><i>&nbsp;</i></td>
+                     <td class="x-btn-tc"></td>
+                     <td class="x-btn-tr"><i>&nbsp;</i></td>
+                  </tr>
+                  <tr>
+                     <td class="x-btn-ml"><i>&nbsp;</i></td>
+                     <td class="x-btn-mc">
+                        <em class="" unselectable="on">
+                           <button type="button" id="ext-gen157" class=" x-btn-text">
+                              <div class="sd_widget_btn_text"><span class="ctiIcon footerComponentIcon"></span><span class="sd_widget_btn_text_positioner">Phone</span></div>
+                           </button>
+                        </em>
+                     </td>
+                     <td class="x-btn-mr"><i>&nbsp;</i></td>
+                  </tr>
+                  <tr>
+                     <td class="x-btn-bl"><i>&nbsp;</i></td>
+                     <td class="x-btn-bc"></td>
+                     <td class="x-btn-br"><i>&nbsp;</i></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div id="hotkey_focus_effect" style="display:none"></div>
+      <div id="servicedesk" class=" miniviewtab_enabled x-border-panel x-border-layout-ct" style="left: 0px; top: 65px; width: 1560px; height: 532px;">
+         <div id="navigatortab" class="x-plain miniview_vertical sd_nav_tabpanel x-border-panel" style="left: 281px; top: 0px; width: 1279px;">
+            <div class="x-plain-header sd_primary_tabstrip x-unselectable" id="ext-gen24" style="width: 1279px;">
+               <div class="x-tab-tabmenu-right" id="ext-gen34"></div>
+               <div class="x-tab-strip-wrap" id="ext-gen27" style="left: 0px; width: 1257px;">
+                  <ul class="x-tab-strip x-tab-strip-top" id="ext-gen29">
+                     <li class="x-tab-strip-closable caseTab x-tab-with-icon x-tab-strip-active" id="navigatortab__scc-pt-0">
+                        <a class="x-tab-strip-close" id="ext-gen61"></a>
+                        <a class="x-tab-right primaryPalette" href="#" id="ext-gen62">
+                           <em class="x-tab-left">
+                              <span class="x-tab-strip-inner">
+                                 <span class="x-tab-strip-text x-tab-dirty" id="ext-gen112">
+                                    <span class="tabIcon caseMru standardObject standardIcon">
+                                       <div class="mruIcon"></div>
+                                    </span>
+                                    <span class="tabText">New Case</span>
+                                 </span>
+                              </span>
+                           </em>
+                        </a>
+                     </li>
+                     <li class="x-tab-strip-closable setupTab" id="navigatortab__scc-pt-1">
+                        <a class="x-tab-strip-close" id="ext-gen162"></a>
+                        <a class="x-tab-right primaryPalette" href="#" id="ext-gen163">
+                           <em class="x-tab-left">
+                              <span class="x-tab-strip-inner">
+                                 <span class="x-tab-strip-text " id="ext-gen187">
+                                    <span class="tabIcon setupMru standardObject standardIcon">
+                                       <div class="mruIcon"></div>
+                                    </span>
+                                    <span class="tabText">apacheco27</span>
+                                 </span>
+                              </span>
+                           </em>
+                        </a>
+                     </li>
+                     <li class="x-tab-strip-closable accountTab" id="navigatortab__scc-pt-2">
+                        <a class="x-tab-strip-close" id="ext-gen190"></a>
+                        <a class="x-tab-right primaryPalette" href="#" id="ext-gen191">
+                           <em class="x-tab-left">
+                              <span class="x-tab-strip-inner">
+                                 <span class="x-tab-strip-text" id="ext-gen219">
+                                    <span class="tabIcon accountMru standardObject standardIcon">
+                                       <div class="mruIcon"></div>
+                                    </span>
+                                    <span class="tabText">Healdsburg Unified School District</span>
+                                 </span>
+                              </span>
+                           </em>
+                        </a>
+                     </li>
+                     <li class="add-tab-btn" id="navigatortabaddTabButton" style="visibility: visible;"><a class="x-tab-strip-close"></a><a class="x-tab-right" href="#" id="ext-gen33" style="padding-left: 6px;"><em class="x-tab-left" id="ext-gen32" style="padding-right: 6px;"><span class="x-tab-strip-inner"><span class="x-tab-strip-text "></span></span></em></a></li>
+                     <li class="x-tab-edge" id="ext-gen30"><span class="x-tab-strip-text">&nbsp;</span></li>
+                     <div class="x-clear" id="ext-gen31"></div>
+                  </ul>
+               </div>
+               <div class="x-tab-strip-spacer" id="ext-gen28"></div>
+            </div>
+            <div class="x-plain-bwrap" id="ext-gen25">
+               <div class="x-plain-body sd_nav_tabpanel_body x-tab-panel-body-top" id="ext-gen26" style="width: 1279px; height: 500px;">
+                  <div id="scc-pt-0" class="sd_primary_container x-border-layout-ct" style="width: 1279px; height: 500px;">
+                     <div id="ext-comp-1009" class=" x-panel sd_empty_panel x-border-panel">
+                        <div class="x-panel-bwrap" id="ext-gen68">
+                           <div class="x-panel-body x-panel-body-noheader" id="ext-gen69"></div>
+                        </div>
+                     </div>
+                     <div id="ext-comp-1010" class="x-plain sd_secondary_tabpanel_padding sd_secondary_tabpanel x-border-panel" style="left: 0px; top: 0px; width: 1279px;">
+                        <div class="x-plain-header sd_secondary_tabstrip x-unselectable" id="ext-gen71" style="display: none; width: 1279px;">
+                           <div class="x-tab-tabmenu-right" id="ext-gen83"></div>
+                           <div class="x-tab-strip-wrap" id="ext-gen74">
+                              <ul class="x-tab-strip x-tab-strip-top" id="ext-gen76">
+                                 <li class="x-tab-strip-active  caseTab x-tab-with-icon" id="ext-comp-1010__scc-st-0">
+                                    <a class="x-tab-strip-close" id="ext-gen79"></a>
+                                    <a class="x-tab-right primaryPalette" href="#" id="ext-gen80">
+                                       <em class="x-tab-left">
+                                          <span class="x-tab-strip-inner">
+                                             <span class="x-tab-strip-text x-tab-dirty" id="ext-gen111">
+                                                <span class="tabIcon caseMru standardObject standardIcon">
+                                                   <div class="mruIcon"></div>
+                                                </span>
+                                                <span class="tabText">Details</span>
+                                             </span>
+                                          </span>
+                                       </em>
+                                    </a>
+                                 </li>
+                                 <li class="add-tab-btn" id="ext-comp-1010addTabButton"><a class="x-tab-strip-close"></a><a class="x-tab-right" href="#" id="ext-gen82" style="padding-left: 6px;"><em class="x-tab-left" id="ext-gen81" style="padding-right: 6px;"><span class="x-tab-strip-inner"><span class="x-tab-strip-text "></span></span></em></a></li>
+                                 <li class="x-tab-edge" id="ext-gen77"><span class="x-tab-strip-text">&nbsp;</span></li>
+                                 <div class="x-clear" id="ext-gen78"></div>
+                              </ul>
+                           </div>
+                           <div class="x-tab-strip-spacer" id="ext-gen75"></div>
+                        </div>
+                        <div class="x-plain-bwrap" id="ext-gen72">
+                           <div class="x-plain-body x-tab-panel-body-top" id="ext-gen73" style="width: 1279px; height: 500px;">
+                              <div id="scc-st-0" class=" sd_secondary_container x-border-layout-ct" style="width: 1279px; height: 500px;">
+                                 <div id="ext-comp-1011" class=" x-border-panel x-border-layout-ct" style="left: 0px; top: 0px; width: 1279px; height: 500px;">
+                                    <iframe id="ext-comp-1012" name="ext-comp-1012" frameborder="0" allow="camera *; geolocation *; microphone *" src="https://amplify.my.salesforce.com/500/e?RecordType=012800000007id1&amp;ekp=500&amp;ent=Case&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isWsVw=true&amp;isdtp=vw&amp;nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&amp;sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com" class=" x-border-panel" style="left: 0px; top: 0px; width: 1279px; height: 500px;"></iframe>
+                                    <div id="sd_vw_error_div_scc-st-0" class=" message warningM3 sd_vw_error_div x-border-panel x-hide-display">
+                                       <table cellspacing="0" cellpadding="0" border="0" class="messageTable" style="margin: 0px; padding: 0px;">
+                                          <tbody>
+                                             <tr valign="top">
+                                                <td><img alt="ERROR" src="/s.gif" class="msgIcon" title="ERROR"></td>
+                                                <td class="messageCell">
+                                                   <div class="messageText">Someone else just updated this record.  Refresh the record to see its updates?<a href="#">Refresh</a></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="scc-pt-1" class="sd_primary_container x-border-layout-ct x-hide-display" style="width: 1279px; height: 500px;">
+                     <div id="ext-comp-1022" class=" x-panel sd_empty_panel x-border-panel">
+                        <div class="x-panel-bwrap" id="ext-gen167">
+                           <div class="x-panel-body x-panel-body-noheader" id="ext-gen168"></div>
+                        </div>
+                     </div>
+                     <div id="ext-comp-1023" class="x-plain sd_secondary_tabpanel_padding sd_secondary_tabpanel x-border-panel" style="left: 0px; top: 0px; width: 1279px;">
+                        <div class="x-plain-header sd_secondary_tabstrip x-unselectable" id="ext-gen170" style="display: none; width: 1279px;">
+                           <div class="x-tab-tabmenu-right" id="ext-gen182"></div>
+                           <div class="x-tab-strip-wrap" id="ext-gen173">
+                              <ul class="x-tab-strip x-tab-strip-top" id="ext-gen175">
+                                 <li class="x-tab-strip-active  setupTab" id="ext-comp-1023__scc-st-1">
+                                    <a class="x-tab-strip-close" id="ext-gen178"></a>
+                                    <a class="x-tab-right primaryPalette" href="#" id="ext-gen179">
+                                       <em class="x-tab-left">
+                                          <span class="x-tab-strip-inner">
+                                             <span class="x-tab-strip-text " id="ext-gen186">
+                                                <span class="tabIcon setupMru standardObject standardIcon">
+                                                   <div class="mruIcon"></div>
+                                                </span>
+                                                <span class="tabText">Details</span>
+                                             </span>
+                                          </span>
+                                       </em>
+                                    </a>
+                                 </li>
+                                 <li class="add-tab-btn" id="ext-comp-1023addTabButton"><a class="x-tab-strip-close"></a><a class="x-tab-right" href="#" id="ext-gen181" style="padding-left: 6px;"><em class="x-tab-left" id="ext-gen180" style="padding-right: 6px;"><span class="x-tab-strip-inner"><span class="x-tab-strip-text "></span></span></em></a></li>
+                                 <li class="x-tab-edge" id="ext-gen176"><span class="x-tab-strip-text">&nbsp;</span></li>
+                                 <div class="x-clear" id="ext-gen177"></div>
+                              </ul>
+                           </div>
+                           <div class="x-tab-strip-spacer" id="ext-gen174"></div>
+                        </div>
+                        <div class="x-plain-bwrap" id="ext-gen171">
+                           <div class="x-plain-body x-tab-panel-body-top" id="ext-gen172" style="width: 1279px; height: 500px;">
+                              <div id="scc-st-1" class=" sd_secondary_container x-border-layout-ct" style="width: 1279px; height: 500px;">
+                                 <div id="ext-comp-1024" class=" x-border-panel x-border-layout-ct" style="left: 0px; top: 0px; width: 1279px; height: 500px;">
+                                    <iframe id="ext-comp-1025" name="ext-comp-1025" frameborder="0" allow="camera *; geolocation *; microphone *" src="/_ui/search/ui/UnifiedSearchResults?searchType=2&amp;sen=00Q&amp;sen=001&amp;sen=02s&amp;sen=003&amp;sen=00T&amp;sen=500&amp;sen=005&amp;sen=00U&amp;sen=006&amp;sen=ka&amp;sen=570&amp;str=apacheco27&amp;isdtp=vw&amp;isWsVw=true&amp;nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&amp;sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com" class=" x-border-panel" style="left: 0px; top: 0px; width: 1279px; height: 500px;"></iframe>
+                                    <div id="sd_vw_error_div_scc-st-1" class=" message warningM3 sd_vw_error_div x-border-panel x-hide-display">
+                                       <table cellspacing="0" cellpadding="0" border="0" class="messageTable" style="margin: 0px; padding: 0px;">
+                                          <tbody>
+                                             <tr valign="top">
+                                                <td><img alt="ERROR" src="/s.gif" class="msgIcon" title="ERROR"></td>
+                                                <td class="messageCell">
+                                                   <div class="messageText">Someone else just updated this record.  Refresh the record to see its updates?<a href="#">Refresh</a></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="scc-pt-2" class=" sd_primary_container x-border-layout-ct x-hide-display" style="width: 1279px; height: 500px;">
+                     <div id="ext-comp-1027" class=" x-panel sd_empty_panel x-border-panel">
+                        <div class="x-panel-bwrap" id="ext-gen195">
+                           <div class="x-panel-body x-panel-body-noheader" id="ext-gen196"></div>
+                        </div>
+                     </div>
+                     <div id="ext-comp-1028" class=" x-plain sd_secondary_tabpanel_padding sd_secondary_tabpanel x-border-panel" style="left: 0px; top: 0px; width: 1279px;">
+                        <div class="x-plain-header sd_secondary_tabstrip x-unselectable" id="ext-gen198" style="width: 1279px;">
+                           <div class="x-tab-tabmenu-right" id="ext-gen214"></div>
+                           <div class="x-tab-strip-wrap" id="ext-gen201" style="width: 1257px;">
+                              <ul class="x-tab-strip x-tab-strip-top" id="ext-gen203">
+                                 <li class="" id="ext-comp-1028__scc-st-2">
+                                    <a class="x-tab-strip-close" id="ext-gen206"></a>
+                                    <a class="x-tab-right" href="#" id="ext-gen207">
+                                       <em class="x-tab-left">
+                                          <span class="x-tab-strip-inner">
+                                             <span class="x-tab-strip-text ">
+                                                <span class="tabIcon accountMru standardObject standardIcon">
+                                                   <div class="mruIcon"></div>
+                                                </span>
+                                                <span class="tabText">Details</span>
+                                             </span>
+                                          </span>
+                                       </em>
+                                    </a>
+                                 </li>
+                                 <li class="x-tab-strip-closable contactTab" id="ext-comp-1028__scc-st-3">
+                                    <a class="x-tab-strip-close" id="ext-gen208"></a>
+                                    <a class="x-tab-right primaryPalette" href="#" id="ext-gen209">
+                                       <em class="x-tab-left">
+                                          <span class="x-tab-strip-inner">
+                                             <span class="x-tab-strip-text " id="ext-gen218">
+                                                <span class="tabIcon contactMru standardObject standardIcon">
+                                                   <div class="mruIcon"></div>
+                                                </span>
+                                                <span class="tabText">Aida Pacheco</span>
+                                             </span>
+                                          </span>
+                                       </em>
+                                    </a>
+                                 </li>
+                                 <li class="x-tab-strip-closable caseTab" id="ext-comp-1028__scc-st-4">
+                                    <a class="x-tab-strip-close" id="ext-gen220"></a>
+                                    <a class="x-tab-right primaryPalette" href="#" id="ext-gen221">
+                                       <em class="x-tab-left">
+                                          <span class="x-tab-strip-inner">
+                                             <span class="x-tab-strip-text " id="ext-gen227">
+                                                <span class="tabIcon caseMru standardObject standardIcon">
+                                                   <div class="mruIcon"></div>
+                                                </span>
+                                                <span class="tabText">01048399</span>
+                                             </span>
+                                          </span>
+                                       </em>
+                                    </a>
+                                 </li>
+                                 <li class="x-tab-strip-closable x-tab-strip-active caseTab" id="ext-comp-1028__scc-st-5">
+                                    <a class="x-tab-strip-close" id="ext-gen228"></a>
+                                    <a class="x-tab-right primaryPalette" href="#" id="ext-gen229">
+                                       <em class="x-tab-left">
+                                          <span class="x-tab-strip-inner">
+                                             <span class="x-tab-strip-text" id="ext-gen234">
+                                                <span class="tabIcon caseMru standardObject standardIcon">
+                                                   <div class="mruIcon"></div>
+                                                </span>
+                                                <span class="tabText">01048405</span>
+                                             </span>
+                                          </span>
+                                       </em>
+                                    </a>
+                                 </li>
+                                 <li class="add-tab-btn" id="ext-comp-1028addTabButton"><a class="x-tab-strip-close"></a><a class="x-tab-right" href="#" id="ext-gen213" style="padding-left: 6px;"><em class="x-tab-left" id="ext-gen212" style="padding-right: 6px;"><span class="x-tab-strip-inner"><span class="x-tab-strip-text "></span></span></em></a></li>
+                                 <li class="x-tab-edge" id="ext-gen204"><span class="x-tab-strip-text">&nbsp;</span></li>
+                                 <div class="x-clear" id="ext-gen205"></div>
+                              </ul>
+                           </div>
+                           <div class="x-tab-strip-spacer" id="ext-gen202"></div>
+                        </div>
+                        <div class="x-plain-bwrap" id="ext-gen199">
+                           <div class="x-plain-body x-tab-panel-body-top" id="ext-gen200" style="width: 1279px; height: 468px;">
+                              <div id="scc-st-3" class=" sd_secondary_container x-border-layout-ct x-hide-display" style="width: 1279px; height: 468px;">
+                                 <div id="ext-comp-1031" class=" x-border-panel x-border-layout-ct" style="left: 0px; top: 0px; width: 1279px; height: 468px;">
+                                    <iframe id="ext-comp-1032" name="ext-comp-1032" frameborder="0" allow="camera *; geolocation *; microphone *" src="/00334000025VEln?srPos=0&amp;srKp=003&amp;isdtp=vw&amp;nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&amp;sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com" class=" x-border-panel" style="left: 0px; top: 0px; width: 1279px; height: 468px;"></iframe>
+                                    <div id="sd_vw_error_div_scc-st-3" class=" message warningM3 sd_vw_error_div x-border-panel x-hide-display">
+                                       <table cellspacing="0" cellpadding="0" border="0" class="messageTable" style="margin: 0px; padding: 0px;">
+                                          <tbody>
+                                             <tr valign="top">
+                                                <td><img alt="ERROR" src="/s.gif" class="msgIcon" title="ERROR"></td>
+                                                <td class="messageCell">
+                                                   <div class="messageText">Someone else just updated this record.  Refresh the record to see its updates?<a href="#">Refresh</a></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="scc-st-4" class=" sd_secondary_container x-border-layout-ct x-hide-display" style="width: 1279px; height: 468px;">
+                                 <div id="ext-comp-1034" class=" x-border-panel x-border-layout-ct" style="left: 0px; top: 0px; width: 1279px; height: 468px;">
+                                    <iframe id="ext-comp-1035" name="ext-comp-1035" frameborder="0" allow="camera *; geolocation *; microphone *" src="https://amplify.my.salesforce.com/50034000016LbvS?isdtp=vw&amp;nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&amp;sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com" class=" x-border-panel" style="left: 0px; top: 0px; width: 1279px; height: 468px;"></iframe>
+                                    <div id="sd_vw_error_div_scc-st-4" class=" message warningM3 sd_vw_error_div x-border-panel x-hide-display">
+                                       <table cellspacing="0" cellpadding="0" border="0" class="messageTable" style="margin: 0px; padding: 0px;">
+                                          <tbody>
+                                             <tr valign="top">
+                                                <td><img alt="ERROR" src="/s.gif" class="msgIcon" title="ERROR"></td>
+                                                <td class="messageCell">
+                                                   <div class="messageText">Someone else just updated this record.  Refresh the record to see its updates?<a href="#">Refresh</a></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="scc-st-5" class=" sd_secondary_container x-border-layout-ct" style="width: 1279px; height: 468px;">
+                                 <div id="ext-comp-1036" class=" x-border-panel x-border-layout-ct" style="left: 0px; top: 0px; width: 1279px; height: 468px;">
+                                    <iframe id="ext-comp-1037" name="ext-comp-1037" frameborder="0" allow="camera *; geolocation *; microphone *" src="/50034000016LbvS/e?clone=1&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvMU5qb3pNaTQxT0RWYSxmMmNsazV5MW5BS1JBU3ZKdnVELWpfLE5qZ3daR0Uz&amp;common.udd.actions.ActionsUtilORIG_URI=%2F50034000016LbvS%2Fe&amp;isdtp=vw&amp;nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&amp;sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com" class=" x-border-panel" style="left: 0px; top: 0px; width: 1279px; height: 468px;"></iframe>
+                                    <div id="sd_vw_error_div_scc-st-5" class=" message warningM3 sd_vw_error_div x-border-panel x-hide-display">
+                                       <table cellspacing="0" cellpadding="0" border="0" class="messageTable" style="margin: 0px; padding: 0px;">
+                                          <tbody>
+                                             <tr valign="top">
+                                                <td><img alt="ERROR" src="/s.gif" class="msgIcon" title="ERROR"></td>
+                                                <td class="messageCell">
+                                                   <div class="messageText">Someone else just updated this record.  Refresh the record to see its updates?<a href="#">Refresh</a></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="miniviewtab" class=" x-plain miniview_vertical sd_nav_tabpanel x-border-panel" style="width: 281px; left: 0px; top: 0px;">
+            <div class="support-servicedesk-navigator" id="ext-gen46">
+               <table id="ext-comp-1007" cellspacing="0" class="x-btn support-servicedesk-sb caseMru standardObject mruIcon support-servicedesk-sbactive x-btn-noicon" style="width: 250px; height: 26px;">
+                  <tbody class="x-btn-small x-btn-icon-small-left">
+                     <tr>
+                        <td class="x-btn-tl"><i>&nbsp;</i></td>
+                        <td class="x-btn-tc"></td>
+                        <td class="x-btn-tr"><i>&nbsp;</i></td>
+                     </tr>
+                     <tr>
+                        <td class="x-btn-ml"><i>&nbsp;</i></td>
+                        <td class="x-btn-mc">
+                           <em class="x-btn-split" unselectable="on" id="ext-gen226">
+                              <button type="button" id="ext-gen47" class=" x-btn-text">
+                                 <div class="mruIcon"></div>
+                                 <span>Cases</span>
+                              </button>
+                           </em>
+                        </td>
+                        <td class="x-btn-mr"><i>&nbsp;</i></td>
+                     </tr>
+                     <tr>
+                        <td class="x-btn-bl"><i>&nbsp;</i></td>
+                        <td class="x-btn-bc"></td>
+                        <td class="x-btn-br"><i>&nbsp;</i></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="x-plain-header sd_primary_tabstrip x-unselectable" id="ext-gen36" style="width: 281px;">
+               <div class="x-tab-strip-wrap" id="ext-gen39" style="width: 50px; left: 250px;">
+                  <ul class="x-tab-strip x-tab-strip-top" id="ext-gen41">
+                     <li class=" x-tab-strip-active" id="miniviewtab__ext-comp-1004" style="display: none;"><a class="x-tab-strip-close" id="ext-gen44"></a><a class="x-tab-right" href="#" id="ext-gen45"><em class="x-tab-left"><span class="x-tab-strip-inner"><span class="x-tab-strip-text "></span></span></em></a></li>
+                     <li class="add-tab-btn" id="miniviewtabaddTabButton" style="visibility: hidden;"><a class="x-tab-strip-close"></a><a class="x-tab-right" href="#" id="ext-gen49" style="padding-left: 6px;"><em class="x-tab-left" id="ext-gen48" style="padding-right: 6px;"><span class="x-tab-strip-inner"><span class="x-tab-strip-text "></span></span></em></a></li>
+                     <li class="x-tab-edge" id="ext-gen42"><span class="x-tab-strip-text">&nbsp;</span></li>
+                     <div class="x-clear" id="ext-gen43"></div>
+                  </ul>
+               </div>
+               <div class="x-tab-strip-spacer" id="ext-gen40"></div>
+            </div>
+            <div class="x-plain-bwrap" id="ext-gen37">
+               <div class="x-plain-body sd_nav_tabpanel_body x-tab-panel-body-top" id="ext-gen38" style="width: 281px; height: 500px;">
+                  <div id="ext-comp-1004" class="" style="width: 281px; height: 500px;"><iframe id="ext-comp-1005" name="ext-comp-1005" frameborder="0" allow="camera *; geolocation *; microphone *" src="/500?fcf=00B34000009awPl&amp;isdtp=nv&amp;nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&amp;sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com" style="width: 281px; height: 500px;"></iframe></div>
+               </div>
+            </div>
+         </div>
+         <div class="x-layout-split x-layout-split-west x-splitbar-h" id="miniviewtab-xsplit" style="visibility: visible; left: 281px; top: 0px; height: 532px;">
+            <div class="x-layout-mini x-layout-mini-west x-layout-mini-custom-logo" id="ext-gen54"></div>
+         </div>
+      </div>
+      <!-- Main Body Starts Here -->
+      <form accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" id="sessiontimeout" method="post" name="sessiontimeout" onsubmit="if (window.ffInAlert) { return false; }"><input type="hidden" name="continueButton" id="continueButton" value="Continue Working"><input type="hidden" name="doNotTimeoutLocation" id="doNotTimeoutLocation" value="/page/timeoutrefresh.jsp"><input type="hidden" name="doTimeoutLocation" id="doTimeoutLocation" value="https://amplify.okta.com?stbdtimeout=1"><input type="hidden" name="logoutButton" id="logoutButton" value="Logout"><input type="hidden" name="timeoutText" id="timeoutText" value="For security reasons, your salesforce.com session is about to time out.<br><br>What would you like to do?"></form>
+      <script>var secondsLeftValue=6971,secondsPopupValue=6941,lastPageActivityTime=(new Date).getTime(),forceLogout=true;function startSessionTimer(){schedulePopup(6971,6941)}function schedulePopup(a,b){null!=timeoutUniqueId&&clearTimeout(timeoutUniqueId);forceLogout&&null!=redirectUniqueId&&clearTimeout(redirectUniqueId);if (forceLogout) {redirectUniqueId=setTimeout(logout,1E3*a);}timeoutUniqueId=setTimeout(alertTimeout,1E3*b)}function logout(){(forceLogout && "function"==typeof getRTimeout)?getRTimeout():doLogout()} function doLogout(){window.location="/secur/logout.jsp"}var alertWindow=null,parentWindow=null,timeoutUniqueId=null;redirectUniqueId=null;function updateSessionTimeouts(a,b){"undefined"!=typeof a&&(secondsLeftValue=a);"undefined"!=typeof b&&(secondsPopupValue=b);lastPageActivityTime=(new Date).getTime();schedulePopup(secondsLeftValue,secondsPopupValue);if(window.Sfdc&&Sfdc.require&&"undefined"!=typeof SFDCSessionVars){Sfdc.require("SfdcApp.SfdcSession",function(){SfdcApp.SfdcSession.updateExpires({oid:SFDCSessionVars.oid,uid:UserContext.userId,expire:lastPageActivityTime+(secondsLeftValue*1000)})});}}function updateRedirectTimeouts(a){"undefined"!=typeof a&&(secondsLeftValue=a);null!=redirectUniqueId&&clearTimeout(redirectUniqueId);redirectUniqueId=setTimeout(logout,1E3*(secondsLeftValue));}function alertTimeout(){"function"==typeof getSTimeout?getSTimeout():doAlertTimeout()}function doAlertTimeout(){timeoutUniqueId=null;alertWindow=window.open("/page/timeoutwarn.jsp","_sToamplify_my_salesforce_com","width=360,height=280,location=no,dependent=no,resizable=yes,toolbar=no,status=no,directories=no,menubar=no,scrollbars=yes",!1);parentWindow=window;!alertWindow&&forceLogout&&setTimeout(parentWindow.doLogout,25E3);document.body.onfocus=alertFocus}function checkSessionTimeout(){var a=(new Date).getTime();5>=secondsLeftValue-(a-lastPageActivityTime)/1E3?(a=window.location.pathname+window.location.hash,window.location.search&&1<window.location.search.length&&(a+=window.location.search),a="/?ec=302&startURL="+encodeURIComponent(a),top.location=a):(lastPageActivityTime=a,startSessionTimer())}function alertFocus(){alertWindow&&(alertWindow.closed?(alertWindow=null,document.body.onfocus=closePopup):alertWindow.focus())}</script><a href="#skiplink" class="navSkipLink zen-skipLink zen-assistiveText">Skip to main content</a><script>chatter.getToolbox().setToken('VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNaTQ1TnpkYSxEandxYloyb0ZoTzllNGIzZ2E2OUh4LE1XTm1NVEJr');</script>
+      <form action="" method="POST" name="HistoryForm"><input type="hidden" id="sd-tab-states" name="sd-tab-states" style="behavior:url('#default#userData')" value=""><iframe height="1" id="sd-history-frame" name="sd-history-frame" src="https://amplify.my.salesforce.com/ServiceDeskHistory.html?0" title="" width="1"></iframe></form>
+      <script>Sfdc.support.servicedesk.serviceDeskConfig = {id:'servicedesk',region:'center',activeTab:0,navigatorTabList:{tabList: [{label:'Cases',keyprefix:'500',url:'/500?fcf=00B34000009awPl&isdtp=nv',icon:'/img/icon/cases32.png',isTabItem:'true',iconCls:'caseMru standardObject',bg:'B7A752'} ,{label:'Accounts',keyprefix:'001',url:'/001?fcf=00B30000001bvAA&isdtp=nv',icon:'/img/icon/accounts32.png',isTabItem:'true',iconCls:'accountMru standardObject',bg:'236FBD'} ,{label:'Contacts',keyprefix:'003',url:'/003?fcf=00B30000001bvAF&isdtp=nv',icon:'/img/icon/contacts32.png',isTabItem:'true',iconCls:'contactMru standardObject',bg:'56458C'} ,{label:'Dashboards',keyprefix:'01Z',url:'/01Z/o?isdtp=lk',icon:'/img/icon/dashboards32.png',isTabItem:'true',iconCls:'dashboardMru standardObject',bg:'861614'} ,{label:'Reports',url:'/00O/o?isdtp=nv',icon:'/img/icon/reports32.png',isTabItem:'true',iconCls:'reportMru standardObject',bg:'A55647'} ,{label:'Articles',url:'/knowledge/knowledgeHome.apexp?isdtp=nv',icon:'/img/knowledge/knowledge32.png',isTabItem:'true',iconCls:'knowledgeMru standardObject',bg:'F2CF5B'} ,{label:'Quick Text',keyprefix:'574',url:'/574/o?isdtp=nv',icon:'/img/icon/quicktext32.png',isTabItem:'true',iconCls:'quickTextMru standardObject',bg:'62b7e5'} ,{label:'Chatter',url:'/_ui/core/chatter/ui/ChatterPage?isdtp=nv',icon:'/img/icon/chatterC32.png',isTabItem:'true',iconCls:'chatterMru standardObject',bg:'1797C0'} ,{label:'Leads',keyprefix:'00Q',url:'/00Q?fcf=00B30000001bvAN&isdtp=nv',icon:'/img/icon/leads32.png',isTabItem:'true',iconCls:'leadMru standardObject',bg:'E39321'} ,{label:'Home',url:'/home/home.jsp?isdtp=nv',icon:'/img/icon/home32.png',isTabItem:'true',iconCls:'homeMru standardObject',bg:'1797C0'} ,{label:'Live Agent Supervisor - Console',url:'/servlet/servlet.Integration?lid=01r800000004ZaR&ic=1&linkToken=VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNaTQ1TlRkYSxRcUl4ODNLQ191QkxiVG5DSk8tRHhpLFlXWmtNR0po&isdtp=nv',icon:'/img/icon/custom51_100/measuringTape32.png',isTabItem:'true',iconCls:'Custom79Mru',bg:'605E11'} ,{label:'Change Intacct Credentials',url:'/servlet/servlet.Integration?lid=01r340000004fPw&ic=1&linkToken=VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNaTQ1TlRkYSxRcUl4ODNLQ191QkxiVG5DSk8tRHhpLFlXWmtNR0po&isdtp=nv',icon:'/img/icon/plane32.png',isTabItem:'true',iconCls:'Custom20Mru',bg:'2AABAB'} ,{label:'Intacct Errors',url:'/servlet/servlet.Integration?lid=01r340000004fQ1&ic=1&linkToken=VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNaTQ1TlRkYSxRcUl4ODNLQ191QkxiVG5DSk8tRHhpLFlXWmtNR0po&isdtp=nv',icon:'/img/icon/diamond32.png',isTabItem:'true',iconCls:'Custom8Mru',bg:'76B8AD'} ]},isServiceDeskTabset:true,tsid:'02u80000000bwCf',userid:'0053400000Bdr7f',noDetailEntities:["00a","05G","03f","04i","03j","01h","0UM","00J","04n","053","0R0","0LJ","077","088","01U","0BG","02w","0DJ","0OV","02Z","559","0LV","02a","708"],tabDestroyingEntities:["002","00v","0B6"],searchURL:'/_ui/search/ui/UnifiedSearchResults?isdtp=nv&searchType=2',limitedEntities:["00a","0B4","0F9","0B5","0B6","00e","0B7","04i","00E","0B8","00O","00P","068","069","015","01Z","05D"],contextPaneRegions:{"WS_TOP":"north","LEFT":"west","TOP":"north","WS_RIGHT":"east","WS_LEFT":"west","RIGHT":"east","BOTTOM":"south","WS_BOTTOM":"south"},isUnifiedSearchDisabled:false,pushNotification:{"pageRefresh":"1","supportedEntities":{"Case":"500","Contact":"003"},"pushTopicTypeEnum":{"LISTVIEW":"_List","TABVIEW":"_Tab","BASE":""},"pageRefreshEnum":{"NOTIFY":"2","NONE":"0","REFRESH_PAGE":"1"},"listViewRefresh":"1","entitiesWithoutOwnerField":[],"keyPrefixToTopicName":{"003":"/topic/SCC_Contact","500":"/topic/SCC_Case"},"streamingTopicsApiNameMapping":{"SCC_003":{"Contact":"Contact","fields":{"AccountId":"Account","Email":"Email","Phone":"Phone"}},"SCC_500":{"Case":"Case","fields":{"Status":"Status"}}},"listViewRefreshEnum":{"REFRESH_ROW":"2","NONE":"0","REFRESH_LIST":"1"},"enabled":true,"useFilter":true},listviewOrientations:{"VERTICAL":"2","HORIZONTAL":"1","NONE":"0"},miniViewOrientation:'2',isCustomLogo:true,nonce:'5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12',runApexCsrfToken:'HCQAHBgEMDAwMBQAGAcxMDAwMjA4GAcxMDAwMjA4ABQCGfMQ4CRvmKPfEa7MlTWd8uEQixbghIyr0FkAGfMgKK74Vi8gj8BeXjXTpviTfyuv5HzSVkJlMQ5w1xSRCYkA',isUrlNavigatorEnabled:false,isBookmarkTabEnabled:true,hotkeyConfig:{"hotkeysEnabled":true,"hotkeysMultiMonitorBehavior":{"MOVE_RIGHT":"REPRESS_IN_MASTER_WINDOW","OPEN_TAB":"REPRESS_IN_MASTER_WINDOW","CLOSE_TAB":"REPRESS_IN_MASTER_WINDOW","FOCUS_NAVIGATOR_TAB":"TRANSFER_ALL_TO_MASTER_WINDOW","UP_ARROW":"APPLY_TO_FOCUSED_WINDOW","ENTER":"APPLY_TO_FOCUSED_WINDOW","FOCUS_PRIMARY_TAB_PANEL":"TRANSFER_ALL_TO_WORKSPACE_TAB_PANEL_WINDOW","EDIT":"REPRESS_IN_MASTER_WINDOW","OPEN_TAB_SCROLLER_MENU":"APPLY_TO_FOCUSED_WINDOW","DOWN_ARROW":"APPLY_TO_FOCUSED_WINDOW","FOCUS_FIRST_LIST_VIEW":"TRANSFER_ALL_TO_MASTER_WINDOW","MOVE_LEFT":"REPRESS_IN_MASTER_WINDOW","FOCUS_CONSOLE":"APPLY_TO_FOCUSED_WINDOW","FOCUS_SUBTAB_PANEL":"TRANSFER_ALL_TO_WORKSPACE_TAB_PANEL_WINDOW","FOCUS_DETAIL_VIEW":"TRANSFER_ALL_TO_WORKSPACE_TAB_PANEL_WINDOW","FOCUS_SEARCH_INPUT":"TRANSFER_ALL_TO_MASTER_WINDOW","SAVE":"REPRESS_IN_MASTER_WINDOW","FOCUS_LIST_VIEW":"TRANSFER_ALL_TO_MASTER_WINDOW"},"defaultHotkeys":[{"active":true,"name":"FOCUS_CONSOLE","description":"Enter keyboard shortcuts mode","keyCombo":"27","readableKeyCombo":"ESC"},{"active":true,"name":"FOCUS_NAVIGATOR_TAB","description":"Go to the navigation tab","keyCombo":"86","readableKeyCombo":"V"},{"active":true,"name":"FOCUS_DETAIL_VIEW","description":"Go to field on tab","keyCombo":"shift+83","readableKeyCombo":"SHIFT+S"},{"active":true,"name":"FOCUS_PRIMARY_TAB_PANEL","description":"Go to the primary tabs","keyCombo":"80","readableKeyCombo":"P"},{"active":true,"name":"FOCUS_SUBTAB_PANEL","description":"Go to the subtabs","keyCombo":"83","readableKeyCombo":"S"},{"active":true,"name":"FOCUS_LIST_VIEW","description":"Go to the list view","keyCombo":"78","readableKeyCombo":"N"},{"active":true,"name":"FOCUS_FIRST_LIST_VIEW","description":"Go to the first list view item","keyCombo":"shift+70","readableKeyCombo":"SHIFT+F"},{"active":true,"name":"FOCUS_SEARCH_INPUT","description":"Go to header search box","keyCombo":"82","readableKeyCombo":"R"},{"active":true,"name":"MOVE_LEFT","description":"Move left","keyCombo":"37","readableKeyCombo":"LEFT ARROW"},{"active":true,"name":"MOVE_RIGHT","description":"Move right","keyCombo":"39","readableKeyCombo":"RIGHT ARROW"},{"active":true,"name":"UP_ARROW","description":"Move up","keyCombo":"38","readableKeyCombo":"UP ARROW"},{"active":true,"name":"DOWN_ARROW","description":"Move down","keyCombo":"40","readableKeyCombo":"DOWN ARROW"},{"active":true,"name":"OPEN_TAB_SCROLLER_MENU","description":"Open drop-down button on tabs","keyCombo":"68","readableKeyCombo":"D"},{"active":true,"name":"OPEN_TAB","description":"Open tab","keyCombo":"84","readableKeyCombo":"T"},{"active":true,"name":"CLOSE_TAB","description":"Close tab","keyCombo":"67","readableKeyCombo":"C"},{"active":false,"name":"REFRESH_TAB","description":"Refresh Tab","keyCombo":"shift+82","readableKeyCombo":"SHIFT+R"},{"active":true,"name":"ENTER","description":"Enter","keyCombo":"13","readableKeyCombo":"ENTER"},{"active":true,"name":"EDIT","description":"Edit","keyCombo":"69","readableKeyCombo":"E"},{"active":true,"name":"SAVE","description":"Save","keyCombo":"ctrl+83","readableKeyCombo":"CTRL+S"},{"active":false,"name":"CONSOLE_LINK_DIALOG","description":"Get link to share","keyCombo":"85","readableKeyCombo":"U"},{"active":false,"name":"HOTKEYS_PANEL","description":"Show keyboard shortcuts","keyCombo":"shift+75","readableKeyCombo":"SHIFT+K"},{"active":false,"name":"FOCUS_MACRO","description":"Open or close the Macros widget","keyCombo":"77","readableKeyCombo":"M"},{"active":false,"name":"FOCUS_FOOTER_PANEL","description":"Go to the footer","keyCombo":"70","readableKeyCombo":"F"},{"active":false,"name":"TOGGLE_LIST_VIEW","description":"Hide or show pinned list","keyCombo":"shift+78","readableKeyCombo":"SHIFT+N"},{"active":false,"name":"TOGGLE_LEFT_SIDEBAR","description":"Hide or show left sidebar","keyCombo":"shift+37","readableKeyCombo":"SHIFT+LEFT ARROW"},{"active":false,"name":"TOGGLE_RIGHT_SIDEBAR","description":"Hide or show right sidebar","keyCombo":"shift+39","readableKeyCombo":"SHIFT+RIGHT ARROW"},{"active":false,"name":"TOGGLE_TOP_SIDEBAR","description":"Hide or show top sidebar","keyCombo":"shift+38","readableKeyCombo":"SHIFT+UP ARROW"},{"active":false,"name":"TOGGLE_BOTTOM_SIDEBAR","description":"Hide or show bottom sidebar","keyCombo":"shift+40","readableKeyCombo":"SHIFT+DOWN ARROW"},{"active":false,"name":"TOGGLE_APP_LEVEL_COMPONENTS","description":"Zoom in or out","keyCombo":"90","readableKeyCombo":"Z"},{"active":false,"name":"REOPEN_LAST_TAB","description":"Reopen last-closed tab","keyCombo":"shift+67","readableKeyCombo":"SHIFT+C"}],"customHotkeys":[],"keyNameToKeyCombo":{"MOVE_RIGHT":"39","OPEN_TAB":"84","CLOSE_TAB":"67","FOCUS_NAVIGATOR_TAB":"86","UP_ARROW":"38","ENTER":"13","FOCUS_PRIMARY_TAB_PANEL":"80","EDIT":"69","OPEN_TAB_SCROLLER_MENU":"68","DOWN_ARROW":"40","FOCUS_FIRST_LIST_VIEW":"shift+70","MOVE_LEFT":"37","FOCUS_CONSOLE":"27","FOCUS_SUBTAB_PANEL":"83","FOCUS_DETAIL_VIEW":"shift+83","FOCUS_SEARCH_INPUT":"82","SAVE":"ctrl+83","FOCUS_LIST_VIEW":"78"}},isReadOnlyDb:false,isReopenLastTabEnabled:true,isServiceDeskListViewReskinEnabled:true,RtaImageUploadCsrfToken:'VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNaTQ1T1RkYSwya0NvTkRLZDl2d0tZOTZtb2ZjVzhkLE5HRm1NemMy',userProfilePhotoUrl:'https://amplify--c.na29.content.force.com/profilephoto/729340000001L80/T',consoleAjaxCsrfToken:'VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNaTQ1T1RoYSw1Mnp4M2ZOMmlic2pwNmRXWDFyMFE0LFlXRmtZMk00',customStyling:{},miniViewRelSize:'20%',whitelist:["cti-client.talkdeskapp.com"],trustedDomains:["amplify.my.salesforce.com","visual.force.com","my.salesforce.com","na29.content.force.com","documentforce.com"],refreshTabsConfig:{"\\/00U.*\\/e":{"navigatorPanelUrlToRefresh":"/home/home.jsp","workspaceUrlToRefresh":"/00U/c"},"\\/p\\/process\\/ProcessInstanceWorkitemWizardStageManager":{"navigatorPanelUrlToRefresh":"/home/home.jsp"},"\\/00T.*\\/e":{"navigatorPanelUrlToRefresh":"/home/home.jsp","workspaceUrlToRefresh":"/00U/c"},"\\/04i.*\\/e":{"navigatorPanelUrlToRefresh":"/home/home.jsp"}},customConsoleComponent:{"components":[{"MASTER_LABEL":"mostRecentlyUsed","BUTTONTEXT":"History","BUTTONICONURL":"/static/192/img/support/servicedesk/mru.png","COMPONENT":"/apex/null","ABSOLUTEWIDTH":340,"MINWIDTH":340,"ISPOPOUTDISABLED":false,"COMPONENTTYPE":"mostRecentlyUsed"}],"componentJustification":"RIGHT"},canvasVersion:'44.0',canvasLocation:'ServiceDesk',canvasSidMask:'LPZ0qcmBh+u3HDD+aGEcbF22hDIpcY1mS00vFRxIW/2iWSXwRMl5wYidZMc/mY9FP2txoI1HTmpzfkLnz7IX6FcfCIXNBDQ+gJcS6djNKv+UNZYsKOIgqUx/dXX4/73rv59+WX+G6Ovg8/QC92sgWA==',canvasMaskedSid:'HMYwmvmxt9uHLADOPiZxTRzkvHN4OPkFBD5wY30wN5X7GEufCotJpfvSCbJO1OwOCV04ztksNjwjTzWsuIddvyR2RuOYTwNG+eFmx7+gTLrtWtB1X4pJm3oPORjLutaN3fswGh2ygL+q3aVzw1ppbA==',personalization:{"appVersion":216,"urls":[["/500?fcf=00B34000009awPl&isdtp=nv"],["https://amplify.my.salesforce.com/500/e?RecordType=012800000007id1&ekp=500&ent=Case&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isWsVw=true&isdtp=vw&nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com"]],"isDisabledToCloseThroughAPI":[[false],[false]],"tabTitles":[[["Navigator Tab",false]],[["\u003Cspan class=\"tabIcon caseMru standardObject standardIcon\">\u003Cdiv class=\"mruIcon\">\u003C/div>\u003C/span>\u003Cspan class=\"tabText\">New Case\u003C/span>",false,"Case Edit: New Case"]]],"wsPinned":[false,false],"activeWS":1,"activeVW":[0,0],"hpOptions":[false,false],"ilOptions":[false,false],"ilConfigs":[{},{}],"wsApiNames":[null,null],"viewApiNames":[[null],[null]],"viewCpConfigs":[[null],[{"sidebarCts":{},"layoutId":"00h8000000ILmVE"}]],"wpConfigs":[null,{"sidebarCts":{},"layoutId":"00h8000000ILmVE"}],"contextPaneSizes":{"00h8000000ILmVE":{},"00h8000000ILNDM":{},"00h30000000j8Gn":{}},"contextPaneCollapsed":{"00h8000000ILmVE":{},"00h8000000ILNDM":{},"00h30000000j8Gn":{}},"contextPaneActiveItems":{"00h8000000ILmVE":{},"00h8000000ILNDM":{},"00h30000000j8Gn":{}},"headerCollapsed":false,"miniViewSize":{"relative":false,"size":281},"miniViewCollapsed":false,"cacSizes":{"scc_widget_mostRecentlyUsed":{"width":340,"height":370}},"ilCollapsed":false,"hpCollapsed":true,"shareTabDialogOptionSelected":"standard","reskinEnabled":true},bookmarks:{"bookmarks":[{"title":"Account specific Amplify websites","url":"/kA0800000004Hvj","icon":"knowledgeMru"}]},personalizationCsrfToken:'VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNeTR3TVROYSxSODBOX3VFNkxfSjRCZEFLY0ljMzI2LE1qVTRaakZo',isMultiMonitorEnabled:true,isPinTabsEnabled:true,isListViewReskinEnabled:true,isTabHoverEnabled:false,isListViewHoverEnabled:true,isTabGovernanceEnabled:false,getSdMaxNumberOfPrimaryTabs:20,getSdMaxNumberOfSubTabs:10,componentBuilders:{"RELATED_LIST":"Sfdc.support.servicedesk.RelatedListSidebarComponent","SUGGESTED_KNOWLEDGE":"Sfdc.support.servicedesk.SuggestedKnowledge","LIVE_CHAT_PANEL":"Sfdc.support.servicedesk.ChatLogSidebarComponent","INTERACTION_LOG_PANEL":"Sfdc.support.servicedesk.VisualforceSidebarComponent","REPORT_CHART_WIDGET":"Sfdc.support.servicedesk.ReportChartSidebarComponent","LAST_VIEWED_IN_COMMUNITIES":"Sfdc.support.servicedesk.LastViewedInCommunitiesSidebarComponent","TOPICS_WIDGET":"Sfdc.support.servicedesk.EnhancedTopicsConsoleSidebarComponent","KNOWLEDGE_ONE":"Sfdc.support.servicedesk.KnowledgeOneServerSideComponent","HIGHLIGHTS_PANEL":"Sfdc.support.servicedesk.VisualforceSidebarComponent","LOOKUP":"Sfdc.support.servicedesk.LookupSidebarComponent","VISUALFORCE":"Sfdc.support.servicedesk.VisualforceSidebarComponent","CANVAS":"Sfdc.support.servicedesk.CanvasSidebarComponent","FILES_WIDGET":"Sfdc.support.servicedesk.CaseFilesConsoleSidebarComponent","LIGHTNING_COMPONENT":"Sfdc.support.servicedesk.LightningSidebarComponent"},internalAppVersion:216.0,consoleListViewHoverEnabled:true}</script><script>Sfdc.EntityFeed.init({nonce:'8c7fc08d4dc47287a94dcaec38e59a3aae6c9396e3f949ba01edf154b6fa90c5', trustedOrigins:["na29.salesforce.com","amplify",".visual.force.com"]});</script><script src="/static/111213/js/picklist4.js"></script>
+      <div class="hiddenAuraElementContainer" id="auraElementContainer">
+         <script src="/lightning/lightning.out.js?v=vcyT9iZ1mU1gwOHbxxPsSg"></script>
+         <div id="auraElement-1" class="slds-scope" data-ltngout-rendered-by="1:2;a">
+            <!--render facet: 1:2;a-->
+         </div>
+         <script>$Lightning.use("console:integrationAppConsolePage", function() {
+            var attributes = {"aura:id":"1"};	$Lightning.createComponent("console:componentManager", attributes, "auraElement-1",function(component, status, statusMessage) {
+              if (status !== 'SUCCESS') { document.getElementById('auraElement-1').innerText = statusMessage; }   else { $Lightning.getApplication().index('1', component.getGlobalId()); }});
+            });
+         </script>
+         <script>$Lightning.use("console:integrationAppConsolePage", function() {
+            var attributes = {"aura:id":"mostRecentlyUsed"};	$Lightning.createComponent("console:mruWidget", attributes, "auraElement-mostRecentlyUsed",function(component, status, statusMessage) {
+              if (status !== 'SUCCESS') { document.getElementById('auraElement-mostRecentlyUsed').innerText = statusMessage; }   else { $Lightning.getApplication().index('mostRecentlyUsed', component.getGlobalId()); }});
+            });
+         </script>
+      </div>
+      <div id="auraElement-3" class="slds-scope" data-ltngout-rendered-by="1:25;a">
+         <div class="DESKTOP uiPanelManager2" data-aura-rendered-by="6:25;a" data-aura-class="uiPanelManager2"></div>
+      </div>
+      <script>$Lightning.use("console:integrationAppConsolePage", function() {
+         var attributes = {"aura:id":"3"};	$Lightning.createComponent("omni:panelManager", attributes, "auraElement-3",function(component, status, statusMessage) {
+           if (status !== 'SUCCESS') { document.getElementById('auraElement-3').innerText = statusMessage; }   else { $Lightning.getApplication().index('3', component.getGlobalId()); }});
+         });
+      </script>
+      <!-- Body events -->
+      <script type="text/javascript">function bodyOnLoad(){scrt.connection.initialize("https://d.la4-c2-was.salesforceliveagent.com/chat", "https://c.la4-c2-was.salesforceliveagent.com/content", "44");SfdcApp.LiveAgent.Console.Core.init("https://d.la4-c2-was.salesforceliveagent.com/chat", "https://c.la4-c2-was.salesforceliveagent.com/content", "00D300000000VGm", "00D300000000VGm!AR8AQItcOs_vaxlhYAnoNB0dsOmuqMcK66InTkxVP1wKw5JWsiNfUK7xyvt.gmfEyoFYwhi26pLm3EkfbdNCb4hTJ.Qq41I4", "02u80000000bwCf", true);setFocusOnLoad();if (typeof(startSessionTimer)!='undefined') {startSessionTimer(); };if (typeof(ActivityReminder)!='undefined') {ActivityReminder.initialize([], false, false);};if ((window.sfdcPage) && (sfdcPage.executeOnloadQueue)){sfdcPage.executeOnloadQueue();};setAllowScreenPop(true);setMatchOptionsAndOpensWithin({"SingleMatch":["PopToEntity"],"NoMatch":["DoNotPop"],"MultipleMatches":["DoNotPop"]}, false);Sfdc.interaction.initialize({"softphoneUrl":"https://cti-client.talkdeskapp.com","softphoneHeight":"280","salesforceCompatibilityMode":"Classic_and_Lightning","sfdcIframeOrigin":"https://amplify.my.salesforce.com","nonce":"5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12","runApexCsrfToken":"HCQAHBgEMDAwMBQAGAcxMDAwMjA4GAcxMDAwMjA4ABQCGfMQ-__X4qRCUTcD62uK3QVxRRaohIyr0FkAGfMgpAx0qn_LSLPSJoOLepTDM2lwiG1p_SOa5AkmbW0xfBIA","softphoneWidth":"210","appServerPath":"https://amplify.my.salesforce.com"});initSoftphone('a75c2268-24bc-45a6-939c-b924e1e0abc5');SearchClickLoggingUtil.setClickLoggingServletPath("/_ui/search/logging/SearchClickLoggingServlet");new UnifiedSearchAutoCompleteElement("phSearchInput","/_ui/common/search/client/ui/UnifiedSearchAutoCompleteServlet",1,{"isdtp":"vw"},true,null,"phSearchForm",["div","searchOwner","asPhrase","sen"],{},true,3,100);new UnifiedSearchButton("searchButtonContainer", "phSearchButton", "headerSearchRightRoundedCornerMouseOver", "phSearchForm");if(window.PreferenceBits){window.PreferenceBits.prototype.csrfToken="VmpFPSxNakF4T0MweE1DMHlNRlF4TlRvME1qbzBNeTR3TVROYSxyTWVVU2FOVTNQY09jOFRfM0dLTTY5LE1HVXdaalF3";};}function bodyOnBeforeUnload(){if (Sfdc.support.servicedesk) {return Sfdc.support.servicedesk.handleOnBeforeUnload();};if ((window.sfdcPage) && (sfdcPage.executeOnBeforeUnloadQueue)){sfdcPage.executeOnBeforeUnloadQueue();};}function bodyOnFocus(){closePopupOnBodyFocus();}function bodyOnUnload(){Sfdc.support.servicedesk.handleOnUnload();}</script>
+      <div class="datePicker" id="datePicker">
+         <div class="dateBar">
+            <img src="/img/s.gif" alt="Previous Month" class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month">
+            <select id="calMonthPicker" name="calMonthPicker" title="Month">
+               <option value="0">January</option>
+               <option value="1">February</option>
+               <option value="2">March</option>
+               <option value="3">April</option>
+               <option value="4">May</option>
+               <option value="5">June</option>
+               <option value="6">July</option>
+               <option value="7">August</option>
+               <option value="8">September</option>
+               <option value="9">October</option>
+               <option value="10">November</option>
+               <option value="11">December</option>
+            </select>
+            <img src="/img/s.gif" alt="Next Month" class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month">
+            <select id="calYearPicker" name="calYearPicker" title="Year">
+               <option value="2017">2017</option>
+               <option value="2018">2018</option>
+               <option value="2019">2019</option>
+               <option value="2020">2020</option>
+               <option value="2021">2021</option>
+               <option value="2022">2022</option>
+               <option value="2023">2023</option>
+            </select>
+         </div>
+         <div class="calBody">
+            <table class="calDays" border="0" cellpadding="0" cellspacing="0" id="datePickerCalendar">
+               <tbody>
+                  <tr>
+                     <th class="dayOfWeek" scope="col">Sun</th>
+                     <th class="dayOfWeek" scope="col">Mon</th>
+                     <th class="dayOfWeek" scope="col">Tue</th>
+                     <th class="dayOfWeek" scope="col">Wed</th>
+                     <th class="dayOfWeek" scope="col">Thu</th>
+                     <th class="dayOfWeek" scope="col">Fri</th>
+                     <th class="dayOfWeek" scope="col">Sat</th>
+                  </tr>
+                  <tr class="calRow" id="calRow1">
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                  </tr>
+                  <tr class="calRow" id="calRow2">
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                  </tr>
+                  <tr class="calRow" id="calRow3">
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                  </tr>
+                  <tr class="calRow" id="calRow4">
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                  </tr>
+                  <tr class="calRow" id="calRow5">
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                  </tr>
+                  <tr class="calRow" id="calRow6">
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                     <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="buttonBar"><a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a></div>
+         </div>
+      </div>
+      <script>var SFDCSessionVars={"uid":"0053400000Bdr7f","server":"https:\/\/login.salesforce.com\/login\/sessionserver212.html","act":"u","host":"login.salesforce.com","oid":"00D300000000VGm","exp":1539797933000};</script><script>var SFDCMktUrl='https://login.salesforce.com/17181/logo180.png';</script><script>(function(){var s=document.createElement('SCRIPT');s.async=true;s.defer=true;s.src='/jslibrary/1539646802000/sfdc/SfdcSessionBase208.js';(document.body||document.getElementsByTagName('script')[0]).appendChild(s);})();</script><script async="" defer="" src="/jslibrary/1539646802000/sfdc/SfdcSessionBase208.js"></script><script>(function(){var s=document.createElement('SCRIPT');s.async=true;s.defer=true;s.src='/jslibrary/1539646802000/sfdc/MarketingSurveyResponse.js';(document.body||document.getElementsByTagName('script')[0]).appendChild(s);})();</script><script async="" defer="" src="/jslibrary/1539646802000/sfdc/MarketingSurveyResponse.js"></script>
+      <!-- page generation time: 71ms -->
+      <div class="x-shadow" id="ext-gen238" style="z-index: 20001; left: 391px; top: 110px; width: 137px; height: 30px; display: none;">
+         <div class="xst">
+            <div class="xstl"></div>
+            <div class="xstc" style="width: 125px;"></div>
+            <div class="xstr"></div>
+         </div>
+         <div class="xsc" style="height: 18px;">
+            <div class="xsml"></div>
+            <div class="xsmc" style="width: 125px;"></div>
+            <div class="xsmr"></div>
+         </div>
+         <div class="xsb">
+            <div class="xsbl"></div>
+            <div class="xsbc" style="width: 125px;"></div>
+            <div class="xsbr"></div>
+         </div>
+      </div>
+      <div id="ext-comp-1002" class="x-tip" style="position: absolute; z-index: 20002; visibility: hidden; width: 137px; left: 387px; top: 107px; display: none;">
+         <div class="x-tip-tl">
+            <div class="x-tip-tr">
+               <div class="x-tip-tc">
+                  <div class="x-tip-header x-unselectable" id="ext-gen4"><span class="x-tip-header-text" id="ext-gen237"></span></div>
+               </div>
+            </div>
+         </div>
+         <div class="x-tip-bwrap" id="ext-gen5">
+            <div class="x-tip-ml">
+               <div class="x-tip-mr">
+                  <div class="x-tip-mc" id="ext-gen8">
+                     <div class="x-tip-body" id="ext-gen6" style="height: auto; width: 117px;">Case Edit: New Case</div>
+                  </div>
+               </div>
+            </div>
+            <div class="x-tip-bl x-panel-nofooter" id="ext-gen7">
+               <div class="x-tip-br">
+                  <div class="x-tip-bc"></div>
+               </div>
+            </div>
+         </div>
+         <div class="x-tip-anchor x-tip-anchor-top" id="ext-gen9" style="z-index: 20003; display: none;"></div>
+      </div>
+      <div class="x-layout-split x-layout-split-north x-splitbar-v-custom-logo x-splitbar-disabled" id="ServiceDeskHeader-xsplit" style="visibility: visible; left: 0px; top: 67px; width: 1560px;">
+         <div class="x-layout-mini x-layout-mini-north x-layout-mini-custom-logo" id="ext-gen21"></div>
+      </div>
+      <div class="dd-drop-indicator" id="ext-gen35" style="visibility: hidden;"></div>
+      <div class="dd-drop-indicator" id="ext-gen51" style="visibility: hidden;"></div>
+      <div id="ext-gen55" class=" x-unselectable x-splitbar-proxy x-splitbar-proxy-h"></div>
+      <div id="ext-gen63" class="x-dd-drag-proxy x-dd-drop-nodrop" style="position: absolute; z-index: 15000; visibility: hidden; left: 384px; top: 106px;">
+         <div class="x-dd-drop-icon"></div>
+         <div class="x-dd-drag-ghost" id="ext-gen64"></div>
+      </div>
+      <div class="dd-drop-indicator" id="ext-gen86" style="visibility: hidden;"></div>
+      <div class="x-window-proxy" id="ext-gen93" style="display: none;"></div>
+      <div id="ext-comp-1014" class=" x-window sd_widget_window x-resizable-pinned" style="position: absolute; z-index: 9003; visibility: visible; left: -10000px; top: 131px; width: 340px; display: block;">
+         <div class="x-window-tl">
+            <div class="x-window-tr">
+               <div class="x-window-tc">
+                  <div class="x-window-header x-unselectable x-window-draggable" id="ext-gen87">
+                     <span class="x-window-header-text"></span>
+                     <div class="sd_widget_header_tool drag_corner" id="ext-gen103"></div>
+                     <div class="sd_widget_header_tool right_aligned_icon popout_icon" id="ext-gen104"></div>
+                     <div class="sd_widget_header_tool right_aligned_icon minimize_icon" id="ext-gen105"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="x-window-bwrap" id="ext-gen88">
+            <div class="x-window-ml">
+               <div class="x-window-mr">
+                  <div class="x-window-mc" id="ext-gen91">
+                     <div class="x-window-body" id="ext-gen89" style="width: 340px; height: 344px;">
+                        <div id="ext-comp-1015" style="width: 340px; height: 344px;">
+                           <div id="auraElement-mostRecentlyUsed" class="slds-scope" data-ltngout-rendered-by="5:0">
+                              <div class="zen consoleMruWidget" data-aura-rendered-by="25:0" data-aura-class="consoleMruWidget">
+                                 <div class="zen-line historyHeader" data-aura-rendered-by="26:0"><a class="tab selected zen-unit zen-size1of2" data-tab-panel="mruPanel" data-aura-rendered-by="27:0" href="javascript:void(0);"><span data-aura-rendered-by="30:0" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="28:0" src="/s.gif" class="icon icHistory" alt=""></span>Recent Tabs</a><a class="tab zen-unit zen-size1of2 zen-lastUnit" data-tab-panel="bookmarkPanel" data-aura-rendered-by="32:0" href="javascript:void(0);"><span data-aura-rendered-by="35:0" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="33:0" src="/s.gif" class="icon icBookmark" alt=""></span>Bookmarks</a></div>
+                                 <div data-aura-rendered-by="37:0">
+                                    <div class="tabPanel selected" data-aura-rendered-by="38:0">
+                                       <ul class="mruEntry" data-aura-rendered-by="40:0">
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="675:7;a">
+                                             <div data-aura-rendered-by="63:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="107:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="65:7;a" data-aura-rendered-by="76:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="3">
+                                                      <div data-aura-rendered-by="78:7;a">
+                                                         <div data-aura-rendered-by="71:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="72:7;a" href="javascript:void(0);"><span data-aura-rendered-by="69:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="67:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="102:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="65:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="96:7;a">
+                                                         <!--render facet: 97:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="98:7;a">
+                                                            <!--render facet: 99:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="61:7;a_mruEntryLink" data-aura-rendered-by="109:7;a"><span class="tabIcon accountMru" data-aura-rendered-by="110:7;a"><span class="mruIcon" data-aura-rendered-by="111:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="114:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="4">Healdsburg Unified School District</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="115:7;a" href="javascript:void(0);">5 subtab(s)‎</a><!--render facet: 117:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="164:0">
+                                             <div data-aura-rendered-by="106:0" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="150:0" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="108:0" data-aura-rendered-by="119:0" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="12">
+                                                      <div data-aura-rendered-by="121:0">
+                                                         <div data-aura-rendered-by="114:0"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="115:0" href="javascript:void(0);"><span data-aura-rendered-by="112:0" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="110:0" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="145:0" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="108:0">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="139:0">
+                                                         <!--render facet: 140:0-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="141:0">
+                                                            <!--render facet: 142:0-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="104:0_mruEntryLink" data-aura-rendered-by="152:0"><span class="tabIcon setupMru" data-aura-rendered-by="153:0"><span class="mruIcon" data-aura-rendered-by="154:0"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="157:0" data-aura-class="uiOutputText" data-interactive-lib-uid="13">apacheco27</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="158:0" href="javascript:void(0);">0 subtab(s)‎</a><!--render facet: 160:0-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="673:7;a">
+                                             <div data-aura-rendered-by="3:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="47:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="5:7;a" data-aura-rendered-by="16:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="2">
+                                                      <div data-aura-rendered-by="18:7;a">
+                                                         <div data-aura-rendered-by="11:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="12:7;a" href="javascript:void(0);"><span data-aura-rendered-by="9:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="7:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="42:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="5:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="36:7;a">
+                                                         <!--render facet: 37:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="38:7;a">
+                                                            <!--render facet: 39:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="1:7;a_mruEntryLink" data-aura-rendered-by="49:7;a"><span class="tabIcon caseMru" data-aura-rendered-by="50:7;a"><span class="mruIcon" data-aura-rendered-by="51:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="54:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="3">01045579</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="55:7;a" href="javascript:void(0);">0 subtab(s)‎</a><!--render facet: 57:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="677:7;a">
+                                             <div data-aura-rendered-by="171:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="215:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="173:7;a" data-aura-rendered-by="184:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="4">
+                                                      <div data-aura-rendered-by="186:7;a">
+                                                         <div data-aura-rendered-by="179:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="180:7;a" href="javascript:void(0);"><span data-aura-rendered-by="177:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="175:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="210:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="173:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="204:7;a">
+                                                         <!--render facet: 205:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="206:7;a">
+                                                            <!--render facet: 207:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="169:7;a_mruEntryLink" data-aura-rendered-by="217:7;a"><span class="tabIcon setupMru" data-aura-rendered-by="218:7;a"><span class="mruIcon" data-aura-rendered-by="219:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="222:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="5">apacheco@husd.com</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="223:7;a" href="javascript:void(0);">0 subtab(s)‎</a><!--render facet: 225:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="679:7;a">
+                                             <div data-aura-rendered-by="231:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="275:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="233:7;a" data-aura-rendered-by="244:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="5">
+                                                      <div data-aura-rendered-by="246:7;a">
+                                                         <div data-aura-rendered-by="239:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="240:7;a" href="javascript:void(0);"><span data-aura-rendered-by="237:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="235:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="270:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="233:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="264:7;a">
+                                                         <!--render facet: 265:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="266:7;a">
+                                                            <!--render facet: 267:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="229:7;a_mruEntryLink" data-aura-rendered-by="277:7;a"><span class="tabIcon setupMru" data-aura-rendered-by="278:7;a"><span class="mruIcon" data-aura-rendered-by="279:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="282:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="6">sandy mazza</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="283:7;a" href="javascript:void(0);">0 subtab(s)‎</a><!--render facet: 285:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="681:7;a">
+                                             <div data-aura-rendered-by="291:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="335:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="293:7;a" data-aura-rendered-by="304:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="6">
+                                                      <div data-aura-rendered-by="306:7;a">
+                                                         <div data-aura-rendered-by="299:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="300:7;a" href="javascript:void(0);"><span data-aura-rendered-by="297:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="295:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="330:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="293:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="324:7;a">
+                                                         <!--render facet: 325:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="326:7;a">
+                                                            <!--render facet: 327:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="289:7;a_mruEntryLink" data-aura-rendered-by="337:7;a"><span class="tabIcon caseMru" data-aura-rendered-by="338:7;a"><span class="mruIcon" data-aura-rendered-by="339:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="342:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="7">01047927</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="343:7;a" href="javascript:void(0);">1 subtab(s)‎</a><!--render facet: 345:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="683:7;a">
+                                             <div data-aura-rendered-by="363:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="407:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="365:7;a" data-aura-rendered-by="376:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="7">
+                                                      <div data-aura-rendered-by="378:7;a">
+                                                         <div data-aura-rendered-by="371:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="372:7;a" href="javascript:void(0);"><span data-aura-rendered-by="369:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="367:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="402:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="365:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="396:7;a">
+                                                         <!--render facet: 397:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="398:7;a">
+                                                            <!--render facet: 399:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="361:7;a_mruEntryLink" data-aura-rendered-by="409:7;a"><span class="tabIcon setupMru" data-aura-rendered-by="410:7;a"><span class="mruIcon" data-aura-rendered-by="411:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="414:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="8">1047927</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="415:7;a" href="javascript:void(0);">0 subtab(s)‎</a><!--render facet: 417:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="685:7;a">
+                                             <div data-aura-rendered-by="423:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="467:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="425:7;a" data-aura-rendered-by="436:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="8">
+                                                      <div data-aura-rendered-by="438:7;a">
+                                                         <div data-aura-rendered-by="431:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="432:7;a" href="javascript:void(0);"><span data-aura-rendered-by="429:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="427:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="462:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="425:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="456:7;a">
+                                                         <!--render facet: 457:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="458:7;a">
+                                                            <!--render facet: 459:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="421:7;a_mruEntryLink" data-aura-rendered-by="469:7;a"><span class="tabIcon accountMru" data-aura-rendered-by="470:7;a"><span class="mruIcon" data-aura-rendered-by="471:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="474:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="9">PS 54 Dr G. Blackman Sch Of Excellence (NY)</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="475:7;a" href="javascript:void(0);">1 subtab(s)‎</a><!--render facet: 477:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="687:7;a">
+                                             <div data-aura-rendered-by="495:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="539:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="497:7;a" data-aura-rendered-by="508:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="9">
+                                                      <div data-aura-rendered-by="510:7;a">
+                                                         <div data-aura-rendered-by="503:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="504:7;a" href="javascript:void(0);"><span data-aura-rendered-by="501:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="499:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="534:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="497:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="528:7;a">
+                                                         <!--render facet: 529:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="530:7;a">
+                                                            <!--render facet: 531:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="493:7;a_mruEntryLink" data-aura-rendered-by="541:7;a"><span class="tabIcon setupMru" data-aura-rendered-by="542:7;a"><span class="mruIcon" data-aura-rendered-by="543:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="546:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="10">Linda Seager</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="547:7;a" href="javascript:void(0);">0 subtab(s)‎</a><!--render facet: 549:7;a-->
+                                             </div>
+                                          </li>
+                                          <li class="mruWidgetRowItem" data-aura-rendered-by="689:7;a">
+                                             <div data-aura-rendered-by="555:7;a" class="consoleMruEntry" data-aura-class="consoleMruEntry">
+                                                <div data-aura-rendered-by="599:7;a" class="uiMenu" data-aura-class="uiMenu">
+                                                   <div id="557:7;a" data-aura-rendered-by="568:7;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="10">
+                                                      <div data-aura-rendered-by="570:7;a">
+                                                         <div data-aura-rendered-by="563:7;a"><a aria-disabled="false" aria-describedby="" aria-haspopup="true" tabindex="0" role="button" title="" data-aura-rendered-by="564:7;a" href="javascript:void(0);"><span data-aura-rendered-by="561:7;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="559:7;a" src="/auraFW/resources/aura/s.gif" class="mruMenuButton" alt="Show Menu" title="Show Menu"></span></a></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="mruPrimaryMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default" data-aura-rendered-by="594:7;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="557:7;a">
+                                                      <div class="mruPrimaryMenu" role="menu" data-aura-rendered-by="588:7;a">
+                                                         <!--render facet: 589:7;a-->
+                                                         <ul class="scrollable" role="presentation" data-aura-rendered-by="590:7;a">
+                                                            <!--render facet: 591:7;a-->
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="entryLabel" id="553:7;a_mruEntryLink" data-aura-rendered-by="601:7;a"><span class="tabIcon caseMru" data-aura-rendered-by="602:7;a"><span class="mruIcon" data-aura-rendered-by="603:7;a"></span></span><span class="tabText uiOutputText" data-aura-rendered-by="606:7;a" data-aura-class="uiOutputText" data-interactive-lib-uid="11">01048309</span></span><a class="subtabDropdownButton subtabDropdown" data-aura-rendered-by="607:7;a" href="javascript:void(0);">0 subtab(s)‎</a><!--render facet: 609:7;a-->
+                                             </div>
+                                          </li>
+                                       </ul>
+                                       <div class="mruClearButton bottomListButton" data-aura-rendered-by="45:0"><a class="accessibleDivAnchor" href="#" data-aura-rendered-by="46:0">Clear</a></div>
+                                    </div>
+                                    <div class="tabPanel" data-aura-rendered-by="48:0">
+                                       <div data-sortablelist-containid="50:0" role="application" data-aura-rendered-by="53:0" class="visualEditorSortableList" data-aura-class="visualEditorSortableList">
+                                          <ol class="sortable-list ui-sortable" aria-labelledby="" aria-expanded="" data-sortablelist-id="50:0" role="" data-aura-rendered-by="55:0">
+                                             <li class="visualEditorSortableListItem movable-item ui-sortable-handle" aria-selected="false" aria-grabbed="false" role="option" tabindex="-1" aria-dropeffect="move" data-aura-rendered-by="86:0">
+                                             <li class="bookmarkWidgetRowItem consoleBookmarkEntry" data-aura-rendered-by="67:0" data-aura-class="consoleBookmarkEntry">
+                                                <span class="entryLabel" id="65:0_bookmarkEntryLink" data-aura-rendered-by="68:0">
+                                                   <span data-aura-rendered-by="69:0">
+                                                      <span class="tabIcon knowledgeMru standardObject standardIcon consoleTabIcon" data-aura-rendered-by="73:0" data-aura-class="consoleTabIcon">
+                                                         <div class="mruIcon" data-aura-rendered-by="74:0"></div>
+                                                      </span>
+                                                      <span class="tabText uiOutputText" data-aura-rendered-by="77:0" data-aura-class="uiOutputText" data-interactive-lib-uid="2">Account specific Amplify websites</span>
+                                                   </span>
+                                                   <span class="bookmarkLinks" data-aura-rendered-by="78:0"><a data-aura-rendered-by="79:0" href="javascript:void(0);" tabindex="-1">Get link</a>
+                                                   |
+                                                   <a data-aura-rendered-by="83:0" href="javascript:void(0);" tabindex="-1">Remove</a></span>
+                                                </span>
+                                             </li>
+                                             </li>
+                                          </ol>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="x-window-bl x-panel-nofooter" id="ext-gen90">
+               <div class="x-window-br">
+                  <div class="x-window-bc"></div>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="x-dlg-focus" tabindex="-1" id="ext-gen92">&nbsp;</a>
+         <div class="x-resizable-handle x-resizable-handle-north x-unselectable x-window-handle" id="ext-gen95"></div>
+         <div class="x-resizable-handle x-resizable-handle-south x-unselectable x-window-handle" id="ext-gen96"></div>
+         <div class="x-resizable-handle x-resizable-handle-east x-unselectable x-window-handle" id="ext-gen97"></div>
+         <div class="x-resizable-handle x-resizable-handle-west x-unselectable x-window-handle" id="ext-gen98"></div>
+         <div class="x-resizable-handle x-resizable-handle-northeast x-unselectable x-window-handle" id="ext-gen99"></div>
+         <div class="x-resizable-handle x-resizable-handle-northwest x-unselectable x-window-handle" id="ext-gen100"></div>
+         <div class="x-resizable-handle x-resizable-handle-southeast x-unselectable x-window-handle" id="ext-gen101"></div>
+         <div class="x-resizable-handle x-resizable-handle-southwest x-unselectable x-window-handle" id="ext-gen102"></div>
+      </div>
+      <div class="x-resizable-proxy x-unselectable" id="ext-comp-1014-rzproxy" style="z-index: 9007;"></div>
+      <div id="undefinedHover" class="individualPalette lookupHoverDetail lookupHoverDetailLoading lookupHoverDetailOverridable">
+         <div class="topLeft">
+            <div class="bPageBlock">
+               <div class="pbBody">
+                  Loading...
+                  <div>
+                     <div class="pbFooter">
+                        <div class="bg">
+                           <div></div>
+                        </div>
+                        <div></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <iframe title="sessionserver" src="https://login.salesforce.com/login/sessionserver212.html" style="position: absolute; top: -999px; left: -999px;"></iframe>
+      <div id="auraErrorMessage"></div>
+      <!--render facet: 1:0-->
+      <div id="50034000015z7gl_ListHover" style="position: absolute; z-index: 10005; display: none;" data-uidsfdc="7">
+         <div class="hoverContainer">
+            <div class="hoverContent listHover" data-uidsfdc="17">
+               <div class="loadHover">Loading...</div>
+            </div>
+            <div class="arrow" data-uidsfdc="18"></div>
+         </div>
+      </div>
+      <div id="50034000015cyry_ListHover" style="position: absolute; z-index: 10005; display: none;" data-uidsfdc="8">
+         <div class="hoverContainer">
+            <div class="hoverContent listHover" data-uidsfdc="19">
+               <div class="loadHover">Loading...</div>
+            </div>
+            <div class="arrow" data-uidsfdc="20"></div>
+         </div>
+      </div>
+      <div id="50034000016L6XY_ListHover" style="position: absolute; z-index: 10005; display: none;" data-uidsfdc="9">
+         <div class="hoverContainer">
+            <div class="hoverContent listHover" data-uidsfdc="21">
+               <div class="loadHover">Loading...</div>
+            </div>
+            <div class="arrow" data-uidsfdc="22"></div>
+         </div>
+      </div>
+      <div id="50034000016LK3i_ListHover" style="position: absolute; z-index: 10005; display: none;" data-uidsfdc="10">
+         <div class="hoverContainer">
+            <div class="hoverContent listHover" data-uidsfdc="23">
+               <div class="loadHover">Loading...</div>
+            </div>
+            <div class="arrow" data-uidsfdc="24"></div>
+         </div>
+      </div>
+      <div id="50034000016LZCG_ListHover" style="position: absolute; z-index: 10005; display: none;" data-uidsfdc="11">
+         <div class="hoverContainer">
+            <div class="hoverContent listHover" data-uidsfdc="25">
+               <div class="loadHover">Loading...</div>
+            </div>
+            <div class="arrow" data-uidsfdc="26"></div>
+         </div>
+      </div>
+      <iframe src="https://d.la4-c2-was.salesforceliveagent.com/chat/rest/cdm?version=44&amp;redirect=true" style="display: none;"></iframe>
+      <audio>
+         <source type="audio/mp3" src="/liveagent/audio/request.mp3">
+         <source type="audio/ogg" src="/liveagent/audio/request.ogg">
+      </audio>
+      <audio>
+         <source type="audio/mp3" src="/liveagent/audio/disconnect.mp3">
+         <source type="audio/ogg" src="/liveagent/audio/disconnect.ogg">
+      </audio>
+      <div class="x-window-proxy" id="ext-gen119" style="display: none;"></div>
+      <div id="ext-comp-1017" class=" x-window sd_widget_window x-resizable-pinned sd_widget_window_fixedwidth" style="position: absolute; z-index: 9013; visibility: visible; left: -10000px; top: 131px; width: 300px; display: block;">
+         <div class="x-window-tl">
+            <div class="x-window-tr">
+               <div class="x-window-tc">
+                  <div class="x-window-header x-unselectable x-window-draggable" id="ext-gen113">
+                     <div class="sd_widget_header_tool drag_corner" id="ext-gen134"></div>
+                     <div class="sd_widget_header_tool right_aligned_icon popout_icon popout_icon_disabled" id="ext-gen135"></div>
+                     <div class="sd_widget_header_tool right_aligned_icon minimize_icon" id="ext-gen136"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="x-window-bwrap" id="ext-gen114">
+            <div class="x-window-ml">
+               <div class="x-window-mr">
+                  <div class="x-window-mc" id="ext-gen117">
+                     <div class="x-window-body liveAgentWindowBody" id="ext-gen115" style="width: 300px; height: 344px;">
+                        <div id="liveagent_request_panel" class=" x-panel liveAgentRequestPanel" style="width: 288px;">
+                           <div id="ext-gen121" class=" x-unselectable">
+                              <div id="liveAgentRequestPanelHeaderContainer">
+                                 <div id="liveAgentRequestCount">(0)</div>
+                                 <span id="liveAgentRequestPanelHeader">Requests</span>
+                                 <div id="liveAgentStatusMenu">
+                                    <table id="ext-comp-1018" cellspacing="0" class="x-btn x-btn-text-icon" style="width: auto;">
+                                       <tbody class="x-btn-small x-btn-icon-small-left">
+                                          <tr>
+                                             <td class="x-btn-tl"><i>&nbsp;</i></td>
+                                             <td class="x-btn-tc"></td>
+                                             <td class="x-btn-tr"><i>&nbsp;</i></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="x-btn-ml"><i>&nbsp;</i></td>
+                                             <td class="x-btn-mc"><em class="x-btn-arrow" unselectable="on"><button type="button" id="ext-gen133" class=" x-btn-text liveAgentOffline">Offline</button></em></td>
+                                             <td class="x-btn-mr"><i>&nbsp;</i></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="x-btn-bl"><i>&nbsp;</i></td>
+                                             <td class="x-btn-bc"></td>
+                                             <td class="x-btn-br"><i>&nbsp;</i></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="x-panel-bwrap" id="ext-gen122">
+                              <div class="x-panel-body liveAgentListContainer" id="ext-gen123" style="width: 286px; height: 296px;">
+                                 <div id="liveAgentChatRequestList" class=" liveAgentRequestList" style="width: 100%; height: auto;"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="x-window-bl x-panel-nofooter" id="ext-gen116">
+               <div class="x-window-br">
+                  <div class="x-window-bc"></div>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="x-dlg-focus" tabindex="-1" id="ext-gen118">&nbsp;</a>
+         <div class="x-resizable-handle x-resizable-handle-north x-unselectable x-window-handle" id="ext-gen125"></div>
+         <div class="x-resizable-handle x-resizable-handle-south x-unselectable x-window-handle" id="ext-gen126"></div>
+         <div class="x-resizable-handle x-resizable-handle-east x-unselectable x-window-handle" id="ext-gen127"></div>
+         <div class="x-resizable-handle x-resizable-handle-west x-unselectable x-window-handle" id="ext-gen128"></div>
+         <div class="x-resizable-handle x-resizable-handle-northeast x-unselectable x-window-handle" id="ext-gen129"></div>
+         <div class="x-resizable-handle x-resizable-handle-northwest x-unselectable x-window-handle" id="ext-gen130"></div>
+         <div class="x-resizable-handle x-resizable-handle-southeast x-unselectable x-window-handle" id="ext-gen131"></div>
+         <div class="x-resizable-handle x-resizable-handle-southwest x-unselectable x-window-handle" id="ext-gen132"></div>
+      </div>
+      <div class="x-resizable-proxy x-unselectable" id="ext-comp-1017-rzproxy" style="z-index: 9017;"></div>
+      <div class="x-window-proxy" id="ext-gen144" style="display: none;"></div>
+      <div id="ext-comp-1021" class=" x-window sd_widget_window x-resizable-pinned cti_widget_window sd_widget_window_fixedwidth" style="position: absolute; z-index: 9023; visibility: visible; left: -10000px; top: 319px; width: 210px; display: block;">
+         <div class="x-window-tl">
+            <div class="x-window-tr">
+               <div class="x-window-tc">
+                  <div class="x-window-header x-unselectable x-window-draggable darkBackground" id="ext-gen138">
+                     <span class="x-window-header-text"></span>
+                     <div class="sd_widget_header_tool drag_corner" id="ext-gen154"></div>
+                     <div class="sd_widget_header_tool right_aligned_icon popout_icon popout_icon_disabled" id="ext-gen155"></div>
+                     <div class="sd_widget_header_tool right_aligned_icon minimize_icon" id="ext-gen156"></div>
+                     <div class="draggable console_widget_header_bg darkBackground" id="ext-gen158" style="background: rgb(0, 112, 210);"><span class="widget_drag_handle"></span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="x-window-bwrap" id="ext-gen139">
+            <div class="x-window-ml">
+               <div class="x-window-mr">
+                  <div class="x-window-mc" id="ext-gen142">
+                     <div class="x-window-body" id="ext-gen140" style="width: 210px; height: auto; overflow: auto;">
+                        <div class="" id="softphoneContainer" style="width: auto;">
+                           <div class="openCTISoftphoneModule sidebarModule">
+                              <div>
+                                 <div id="softphoneWarning" style="display:none; background: lightyellow; padding: 5px; margin: 5px; border-radius: 5px; position: relative;"><span id="softphoneWarningText"></span><a href="javascript:void(0);" onclick="Sfdc.Dom.hideByDisplay('softphoneWarning');
+                                    if (Sfdc.support.ctiwidget.CtiWidgetButton.INSTANCE &amp;&amp; Sfdc.support.ctiwidget.CtiWidgetButton.INSTANCE.widgetWindow) {
+                                    var widgetWindow = Sfdc.support.ctiwidget.CtiWidgetButton.INSTANCE.widgetWindow;
+                                    if (! widgetWindow.widgetButton.widget.isPoppedOut() &amp;&amp;
+                                    (!widgetWindow.xCoordinate || !widgetWindow.yCoordinate)) {
+                                    widgetWindow.alignToWidgetButton(true)
+                                    }
+                                    }" style="float: right; top: 5px; right: 5px; position: absolute;"><img src="/img/dismiss.gif" alt="dismiss" width="7" height="7" title="dismiss"></a></div>
+                                 <input type="hidden" ctiapisid="00D300000000VGm!AR8AQHbF4oalf2YMQHkF8US.KVhqrgvhQEZHTsD26me9AgwaciiDqiKeFmn8FgV0niCiwiTSn4xdzJtSh0FM6B7g5hhBkKKJ" id="softphoneCommand" isctiwidgetmode="true" name="softphoneCommand" value="ADD_LOG_OBJECT?ID=50034000016LcLa&amp;OBJECT_LABEL=Case&amp;ENTITY_NAME=Case&amp;OBJECT_NAME=01048405">
+                                 <div class="ctiSoftphone" id="softphone" style="display:none;"></div>
+                                 <iframe id="softphoneRefresh" name="softphoneRefresh" src="/img/cti_refresh.gif" style="display:none;" title="RefreshCTI"></iframe>
+                                 <div id="adapterIframeDiv"><iframe id="scc_widget_SoftphoneIframe" name="scc_widget_SoftphoneIframe" allow="camera *; geolocation *; microphone *" src="/loadSoftphone.html?sfdcIFrameOrigin=https%3A%2F%2Famplify.my.salesforce.com&amp;nonce=5061f40e988c737d19dc08050be05e5866be61dd501bf10fdfbb4ce73e094a12&amp;isAdapterUrl=true&amp;isdtp=vw" width="210" height="250" frameborder="0" style="display: block;"></iframe></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="x-window-bl x-panel-nofooter" id="ext-gen141">
+               <div class="x-window-br">
+                  <div class="x-window-bc"></div>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="x-dlg-focus" tabindex="-1" id="ext-gen143">&nbsp;</a>
+         <div class="x-resizable-handle x-resizable-handle-north x-unselectable x-window-handle" id="ext-gen146"></div>
+         <div class="x-resizable-handle x-resizable-handle-south x-unselectable x-window-handle" id="ext-gen147"></div>
+         <div class="x-resizable-handle x-resizable-handle-east x-unselectable x-window-handle" id="ext-gen148"></div>
+         <div class="x-resizable-handle x-resizable-handle-west x-unselectable x-window-handle" id="ext-gen149"></div>
+         <div class="x-resizable-handle x-resizable-handle-northeast x-unselectable x-window-handle" id="ext-gen150"></div>
+         <div class="x-resizable-handle x-resizable-handle-northwest x-unselectable x-window-handle" id="ext-gen151"></div>
+         <div class="x-resizable-handle x-resizable-handle-southeast x-unselectable x-window-handle" id="ext-gen152"></div>
+         <div class="x-resizable-handle x-resizable-handle-southwest x-unselectable x-window-handle" id="ext-gen153"></div>
+      </div>
+      <div class="x-resizable-proxy x-unselectable" id="ext-comp-1021-rzproxy" style="z-index: 9027;"></div>
+      <div id="consoleWidgetMouseDragOverlay" class="console_widget_mouse_drag_overlay" style="display: none;"></div>
+      <div id="sfdc_aria_asstv_marquee" class="assistiveText zen-assistiveText">
+         <div id="sfdc_aria_msg_alert" role="alert"></div>
+         <div id="sfdc_aria_msg_assertive" aria-live="assertive" aria-atomic="false" aria-relevant="additions"></div>
+         <div id="sfdc_aria_msg_polite" aria-live="polite" aria-atomic="false" aria-relevant="additions">Autocomplete options are available, use the up and down arrow keys to navigate</div>
+      </div>
+      <div id="ext-gen164" class="x-dd-drag-proxy x-dd-drop-nodrop" style="position: absolute; z-index: 15000; visibility: hidden; left: 532px; top: 104px;">
+         <div class="x-dd-drop-icon"></div>
+         <div class="x-dd-drag-ghost" id="ext-gen165"></div>
+      </div>
+      <div class="dd-drop-indicator" id="ext-gen185" style="visibility: hidden;"></div>
+      <div id="ext-gen192" class="x-dd-drag-proxy x-dd-drop-nodrop" style="position: absolute; z-index: 15000; visibility: hidden; left: -10000px; top: -10000px;">
+         <div class="x-dd-drop-icon"></div>
+         <div class="x-dd-drag-ghost" id="ext-gen193"></div>
+      </div>
+      <div id="ext-gen210" class="x-dd-drag-proxy x-dd-drop-nodrop" style="position: absolute; z-index: 15000; visibility: hidden; left: -10000px; top: -10000px;">
+         <div class="x-dd-drop-icon"></div>
+         <div class="x-dd-drag-ghost" id="ext-gen211"></div>
+      </div>
+      <div class="dd-drop-indicator" id="ext-gen217" style="visibility: hidden;"></div>
+      <div id="ext-gen222" class="x-dd-drag-proxy x-dd-drop-nodrop" style="position: absolute; z-index: 15000; visibility: hidden; left: -10000px; top: -10000px;">
+         <div class="x-dd-drop-icon"></div>
+         <div class="x-dd-drag-ghost" id="ext-gen223"></div>
+      </div>
+      <div id="ext-gen230" class="x-dd-drag-proxy x-dd-drop-nodrop" style="position: absolute; z-index: 15000; visibility: hidden; left: -10000px; top: -10000px;">
+         <div class="x-dd-drop-icon"></div>
+         <div class="x-dd-drag-ghost" id="ext-gen231"></div>
+      </div>
+      <div id="ext-gen239" style="position: absolute; left: -1000px; top: -1000px; visibility: hidden; font-size: 12.5px; font-style: normal; font-weight: 400; font-family: SalesforceSans-Regular, Helvetica, Arial, sans-serif; line-height: normal; text-transform: none; letter-spacing: normal; width: auto;"></div>
+   </body>
+</html>
