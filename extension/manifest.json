@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Amplify mClass Tier 1 Auto Generated SalesForce Case",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Allows you to quickly generate an empty case with the click of the mouse ",
   "icons": {
       "128": "favicon.png"
