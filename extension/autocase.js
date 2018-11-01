@@ -40,7 +40,7 @@ $(function(){
 	//Fill Operating System Optgroup -> Option
 	function fillOperatingSystem(){
 		let available = iFrameDOM.find("#00N300000018QhL_unselected");
-		available.val('1');
+		available.val('11');
 		let add = iFrameDOM.find('.multiSelectPicklistCell').eq(1).find('img').eq(0);
 		add.trigger('click');
 	}
